@@ -11,19 +11,21 @@ import streamlit.components.v1 as components
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from ai.parser import parse  # noqa: E402
-from backend.matching import (DISTRITOS, catalogo, load_catalog, load_listings, ofertas_figura,  # noqa: E402
-                              plan_baf)
+from backend.matching import (DISTRITOS, catalogo, load_catalog, load_listings, load_reales,  # noqa: E402
+                              ofertas_figura, ofertas_importacion, plan_baf)
 from backend.pricing import TIPO_CAMBIO, efecto_doble_marginalizacion, retail_usd  # noqa: E402
+from backend.waves import load_waves, tabla_wave  # noqa: E402
 
 st.set_page_config(page_title="Figuras Lima", page_icon="🧸", layout="wide")
 
 
 @st.cache_data
 def _datos():
-    return load_catalog(), load_listings()
+    c = load_catalog()
+    return c, load_listings(), ofertas_importacion(c), load_waves(), load_reales()
 
 
-cat, lst = _datos()
+cat, lst, imp, waves, reales = _datos()
 meta = catalogo(cat)
 bafs_ord = cat.drop_duplicates("baf").sort_values(["anio", "baf"], ascending=[False, True])
 OPCIONES = [f"{r.baf} ({r.anio})" for r in bafs_ord.itertuples()]
@@ -94,25 +96,30 @@ def vista_comprador():
                 tengo.add(p.pieza)
             st.caption(f"viene con **{p.figura}**")
 
-    plan, res = plan_baf(cat, lst, baf, tengo, distrito, presupuesto or None)
+    plan, res = plan_baf(cat, lst, baf, tengo, distrito, presupuesto or None, imp)
     if plan.empty:
         st.success("🎉 ¡Tienes todas las piezas! Tu BAF está completo.")
         return
-    m1, m2, m3 = st.columns(3)
+    m1, m2, m3, m4 = st.columns(4)
     m1.metric("Te faltan", f"{res['faltan']} de {res['total_piezas']}")
     m2.metric("Costo estimado (con envío)", f"S/ {res['costo_pen']:,.0f}")
     m3.metric("Sin oferta en Lima", res["sin_oferta"])
+    m4.metric("Piezas con aviso real", f"{res['reales']} de {res['faltan']}")
 
     izq, der = st.columns([3, 2])
     with izq:
-        tabla = plan[["pieza", "figura", "vendedor", "distrito", "precio_pen", "envio_pen", "total_pen", "eta_min"]].copy()
+        tabla = plan[["pieza", "figura", "fuente", "vendedor", "distrito", "precio_pen", "envio_pen", "total_pen",
+                      "eta_min"]].copy()
+        tabla["fuente"] = tabla["fuente"].map({"real": "✅ real", "sintetico": "simulado"}).fillna("—")
         tabla["Sobreprecio vs retail"] = plan["efecto_dm"].map(pct)
-        st.dataframe(tabla.rename(columns={"pieza": "Pieza", "figura": "Figura", "vendedor": "Vendedor",
+        tabla["eBay (S/, sin aranceles)"] = plan["ebay_pen"].map(lambda x: "—" if x is None or x != x else f"{x:,.0f}")
+        st.dataframe(tabla.rename(columns={"pieza": "Pieza", "figura": "Figura", "fuente": "Aviso", "vendedor": "Vendedor",
                                            "distrito": "Zona", "precio_pen": "Precio S/", "envio_pen": "Envío S/",
                                            "total_pen": "Total S/", "eta_min": "Min"}),
                      hide_index=True, use_container_width=True)
         st.caption("Oferta más barata por pieza (con la pieza del BAF incluida). Sobreprecio = (Precio_rev − P_retail)/P_retail. "
-                   "Envío y tiempo son un modelo; avisos de Lima sintéticos.")
+                   "Aviso ✅ real = transcrito de una captura de Marketplace o de una tienda; «simulado» = dato sintético de relleno. "
+                   "Envío y tiempo son un modelo. eBay = precio + envío a Perú si se vio, sin aranceles.")
     with der:
         centro = DISTRITOS[distrito]
         m = folium.Map(location=centro, zoom_start=11, tiles="cartodbpositron")
@@ -122,6 +129,43 @@ def vista_comprador():
                           icon=folium.Icon(color="blue")).add_to(m)
             folium.PolyLine([[r.lat, r.lon], centro], weight=1, color="gray", opacity=0.5).add_to(m)
         components.html(m._repr_html_(), height=400)
+
+
+def vista_wave():
+    st.markdown("Para figuras **sin BAF** (o de cualquier wave): elige el wave y mira retail, valor en EE. UU. y los avisos "
+                "reales de Lima. Un aviso solo cuenta para un wave si el vendedor indica la línea; si no, queda abajo "
+                "como «wave sin confirmar» porque nombres como Thor o Spider-Man están en decenas de waves.")
+    c1, c2, c3 = st.columns([1, 2, 1])
+    solo_sin_baf = c3.checkbox("Solo waves sin BAF", value=True)
+    anios = sorted(waves["anio"].dropna().astype(int).unique(), reverse=True)
+    anio = c1.selectbox("Año", anios, index=anios.index(2026) if 2026 in anios else 0, key="w_anio")
+    w = waves[waves["anio"] == anio]
+    con_baf = set(cat["wave"].dropna()) | set(cat["baf"])
+    if solo_sin_baf:
+        w = w[~w["wave"].isin(con_baf)]
+    if w.empty:
+        st.info("No hay waves de ese tipo ese año.")
+        return
+    nombre = c2.selectbox("Wave / línea", list(w["wave"]), key=f"w_{anio}_{solo_sin_baf}")
+    fila = w[w["wave"] == nombre].iloc[0]
+    tabla, retail = tabla_wave(nombre, int(fila["anio"]), fila["retail_prom_usd"], cat)
+    k1, k2, k3 = st.columns(3)
+    k1.metric("Figuras en el wave", len(tabla))
+    k2.metric("Retail (USD)", f"{retail:.2f}" if retail else "—")
+    k3.metric("Con aviso real confirmado", int((tabla["avisos"] > 0).sum()))
+    ver = tabla[["figura", "mercado_usd", "avisos", "mejor_pen", "donde", "fuente"]].copy()
+    ver["Sobreprecio vs retail"] = tabla["efecto_dm"].map(pct)
+    ver["mercado_usd"] = ver["mercado_usd"].map(lambda x: "—" if x != x else f"{x:,.2f}")
+    st.dataframe(ver.rename(columns={"figura": "Figura", "mercado_usd": "Valor EE. UU. (USD)", "avisos": "Avisos",
+                                     "mejor_pen": "Mejor precio S/", "donde": "Zona", "fuente": "Fuente"}),
+                 hide_index=True, use_container_width=True)
+    st.caption(f"Valor EE. UU. = ventas completadas en eBay (Legendsverse). Sobreprecio = (Precio_rev − P_retail)/P_retail "
+               f"con P_retail = USD {retail or 0:.2f} × {TIPO_CAMBIO}. Línea: {fila['url_wave']}")
+    with st.expander(f"Todos los avisos reales ({len(reales)}), incluidos eBay y los de wave sin confirmar"):
+        r = reales[["figura", "linea_interpretada", "estado", "precio_pen", "distrito", "fuente"]].sort_values("figura")
+        st.dataframe(r.rename(columns={"figura": "Figura", "linea_interpretada": "Línea según vendedor/captura",
+                                       "estado": "Estado", "precio_pen": "Precio S/", "distrito": "Zona",
+                                       "fuente": "Fuente"}), hide_index=True, use_container_width=True)
 
 
 def vista_vendedor():
@@ -162,8 +206,10 @@ def vista_vendedor():
                       f"o sea {(ref_pen - p_retail_pen) / p_retail_pen:+.0%} vs retail.")
     if len(comp):
         med = comp["precio_pen"].median()
-        lineas.append(f"- Otros vendedores en Lima (sintéticos): mediana S/ {med:,.0f} "
-                      f"({efecto_doble_marginalizacion(med, retail, tc):+.0%} vs retail), {len(comp)} avisos.")
+        nreal = int((comp["fuente"] == "real").sum())
+        lineas.append(f"- Otros vendedores en Lima: mediana S/ {med:,.0f} "
+                      f"({efecto_doble_marginalizacion(med, retail, tc):+.0%} vs retail), {len(comp)} avisos "
+                      f"({nreal} reales, {len(comp) - nreal} simulados).")
     st.markdown("\n".join(lineas))
     if efecto > 0.5:
         st.warning("Tu sobreprecio es alto: el comprador puede preferir importar directamente.")
@@ -177,10 +223,13 @@ st.title("🧸 Figuras Lima · Marvel Legends")
 st.caption("Arma tu BAF pieza por pieza con vendedores de Lima, o fija tu precio de reventa como vendedor.")
 with st.sidebar:
     st.write("Parser: **" + ("Claude (LLM)" if os.getenv("ANTHROPIC_API_KEY") else "Reglas locales (sin API key)") + "**")
-    st.caption("Catálogo y precios de referencia: Legendsverse (USD). Avisos de vendedores de Lima: **sintéticos**.")
+    st.caption(f"Catálogo y precios de referencia: Legendsverse (USD). Avisos: **{len(reales)} reales** transcritos de "
+               "Marketplace, eBay y Tai Loy, más avisos **simulados** de relleno donde no hay datos reales.")
 
-tab_c, tab_v = st.tabs(["🛒 Soy coleccionista", "🏪 Soy vendedor"])
+tab_c, tab_w, tab_v = st.tabs(["🛒 Soy coleccionista", "🔎 Por wave / línea", "🏪 Soy vendedor"])
 with tab_c:
     vista_comprador()
+with tab_w:
+    vista_wave()
 with tab_v:
     vista_vendedor()

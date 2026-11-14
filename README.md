@@ -37,7 +37,10 @@ voz/texto → [Whisper local] → [Claude o reglas → Busqueda] → matching (r
 **Datos:**
 - **Catálogo real:** 92 BAF y 631 piezas de Marvel Legends (2005–2025) desde [Legendsverse](https://legendsverse.com): qué figura trae cada pieza, imagen de la pieza y valor de mercado en USD (ventas en eBay). Scraper de bajo volumen: `data/scrape_legendsverse.py`.
 - **Retail por año:** `data/retail_por_anio.csv`, de la guía de precios de Legendsverse (2012+).
-- **Avisos de vendedores de Lima: sintéticos** (`data/make_listings.py`) sobre figuras reales, con supuestos de tipo de cambio (3.45) y recargo de importación (1.35).
+- **Waves y figuras sin BAF:** 172 waves y 1,692 figuras con valor de mercado (`data/scrape_legendsverse_figuras.py`, `data/scrape_legendsverse_waves.py`).
+- **Avisos reales:** `data/listings_reales.csv`, transcritos a mano de capturas de Facebook Marketplace, eBay y la tienda Tai Loy (vendedores anonimizados). Los de Lima con pieza de BAF alimentan el plan; los de eBay se muestran como alternativa de importación (sin aranceles).
+- **Avisos simulados** (`data/make_listings.py`): relleno sintético sobre figuras reales donde no hay avisos reales. La app los rotula «simulado».
+- **Importaciones (Veritrade, partida 9503):** las figuras Marvel Legends se identifican hasta línea y surtido, no por figura; sirven para volumen y FOB (mediana ~US$5 por unidad, probablemente subvaluado). Los archivos de Veritrade no van al repo.
 
 ## 7. Modelo de negocio
 > **TODO:** decidir quién paga (¿comisión al vendedor?, ¿suscripción del coleccionista para alertas?) y un precio concreto en soles, máximo tres planes. Calcular costo por usuario (tokens, servidor, APIs).

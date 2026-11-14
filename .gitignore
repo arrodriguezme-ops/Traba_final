@@ -4,3 +4,7 @@ __pycache__/
 .venv/
 .ipynb_checkpoints/
 data/cache/
+
+# Datos de licencia paga (nombre del archivo incluye un correo)
+data/Veritrade_*
+lv*.html
