@@ -8,3 +8,6 @@ data/cache/
 # Datos de licencia paga (nombre del archivo incluye un correo)
 data/Veritrade_*
 lv*.html
+
+# Audios de pruebas y entrevistas: tienen voces de personas, no van al repo publico
+audios/

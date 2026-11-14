@@ -14,6 +14,8 @@ from ai.parser import parse  # noqa: E402
 from backend.matching import (DISTRITOS, catalogo, load_catalog, load_listings, load_reales,  # noqa: E402
                               ofertas_figura, ofertas_importacion, plan_baf)
 from backend.pricing import TIPO_CAMBIO, efecto_doble_marginalizacion, retail_usd  # noqa: E402
+from backend.figuras import (buscar, ficha, load_figuras, load_tiendas, normaliza_pedido,  # noqa: E402
+                             reales_con_anio, sobreprecio_por_canal)
 from backend.waves import load_waves, tabla_wave  # noqa: E402
 
 st.set_page_config(page_title="Figuras Lima", page_icon="🧸", layout="wide")
@@ -26,6 +28,17 @@ def _datos():
 
 
 cat, lst, imp, waves, reales = _datos()
+
+
+@st.cache_data
+def _datos_figuras():
+    f = load_figuras()
+    t = load_tiendas()
+    r = reales_con_anio(f)
+    return f, t, r, sobreprecio_por_canal(t, r)
+
+
+figs, tiendas, reales_a, canales = _datos_figuras()
 meta = catalogo(cat)
 bafs_ord = cat.drop_duplicates("baf").sort_values(["anio", "baf"], ascending=[False, True])
 OPCIONES = [f"{r.baf} ({r.anio})" for r in bafs_ord.itertuples()]
@@ -35,13 +48,14 @@ def pct(x):
     return "—" if x is None or x != x else f"{x:+.0%}"
 
 
-def vista_comprador():
-    texto = ""
+def _texto_busqueda(clave: str, ayuda: str) -> str:
     t_txt, t_voz = st.tabs(["⌨️ Escribir", "🎙️ Hablar"])
+    texto = ""
     with t_txt:
-        texto = st.text_input("¿Qué BAF o figura buscas?", placeholder="Quiero armar el BAF Konshu, vivo en Miraflores") or ""
+        texto = st.text_input(ayuda, placeholder="Moon Knight · Wolverine brown suit · Spider-Man 2099 2024",
+                              key=f"txt_{clave}") or ""
     with t_voz:
-        audio = st.audio_input("Graba tu pedido")
+        audio = st.audio_input("Graba tu pedido", key=f"aud_{clave}")
         if audio is not None:
             from ai.transcribe import transcribe
 
@@ -51,8 +65,110 @@ def vista_comprador():
                 texto = transcribe(f.name)
                 os.unlink(f.name)
             st.info(f"Escuché: “{texto}”")
+    return texto
 
-    c = parse(texto, meta) if texto else None
+
+def _soles(x):
+    return "—" if x is None or x != x else f"S/ {x:,.0f}"
+
+
+def _tabla_canales():
+    c = canales.copy()
+    c["Sobreprecio mediano"] = c["sobreprecio_mediano"].map(pct)
+    c["Sobreprecio promedio"] = c["sobreprecio_promedio"].map(pct)
+    c["Precio mediano"] = c["precio_mediano_pen"].map(_soles)
+    st.dataframe(c[["canal", "Sobreprecio mediano", "Sobreprecio promedio", "Precio mediano", "avisos"]].rename(
+        columns={"canal": "Canal", "avisos": "Avisos"}), hide_index=True, use_container_width=True)
+    st.caption("Sobreprecio = (Precio_rev − P_retail)/P_retail, con P_retail = retail de Hasbro en USD × "
+               f"{TIPO_CAMBIO}. Solo avisos de una figura con año identificado. eBay no incluye envío ni aranceles.")
+
+
+def vista_figura():
+    texto = _texto_busqueda("fig", "¿Qué figura buscas? (con o sin BAF)")
+    idx = buscar(texto, figs) if texto else []
+    pedido = parse(normaliza_pedido(texto), meta) if texto else None
+    if pedido and pedido.baf:
+        st.info(f"🧩 **{pedido.baf}** es un BAF: en la pestaña *Armar un BAF* ves sus piezas y dónde conseguirlas.")
+    if texto and not idx and not (pedido and pedido.baf):
+        st.warning("No encontré esa figura en el catálogo de Marvel Legends. Prueba con el nombre en inglés.")
+    if not idx:
+        st.markdown("#### Sobreprecio promedio por canal")
+        _tabla_canales()
+        return
+    # Se elige por indice: hay empaques con el mismo nombre y anio (p. ej. dos "Moon Knight (2022)")
+    def _etq(i):
+        n = int(((figs.loc[idx, "etiqueta"] == figs.at[i, "etiqueta"])).sum())
+        extra = f" · pack de {int(figs.at[i, 'n_figuras_pack'])}" if figs.at[i, "n_figuras_pack"] > 1 else ""
+        return figs.at[i, "etiqueta"] + extra + (f" · #{figs.at[i, 'id']}" if n > 1 and not extra else "")
+
+    elegido = st.radio("¿Cuál de estas?", idx, format_func=_etq, horizontal=True, key=f"sel_{hash(texto) % 10_000}")
+    fila = figs.loc[elegido]
+    f = ficha(fila, tiendas, reales_a, cat)
+    retail = fila["retail_usd"] if fila["retail_usd"] == fila["retail_usd"] else None
+    p_ret = retail * TIPO_CAMBIO if retail else None
+    mercado = fila["valor_mercado_usd"] if fila["valor_mercado_usd"] == fila["valor_mercado_usd"] else None
+    t, r = f["tiendas"], f["reventa"]
+
+    izq, der = st.columns([1, 3])
+    with izq:
+        if isinstance(fila["imagen"], str) and fila["imagen"].startswith("http"):
+            st.image(fila["imagen"], use_container_width=True)
+    with der:
+        st.subheader(f"{fila['figura']} · {int(fila['anio'])} · {fila['fabricante']}")
+        if len(f["baf"]):
+            b = f["baf"].iloc[0]
+            st.markdown(f"🧩 Trae la pieza **{b['pieza']}** del BAF **{b['baf']}** (ver pestaña *Armar un BAF*).")
+        else:
+            st.markdown("Sin pieza de BAF registrada.")
+        k1, k2, k3, k4 = st.columns(4)
+        k1.metric("Retail oficial", _soles(p_ret), help=f"US$ {retail:.2f} × {TIPO_CAMBIO}" if retail else "Sin dato")
+        k2.metric("Valor en EE. UU.", _soles(mercado * TIPO_CAMBIO) if mercado else "—",
+                  help="Ventas completadas en eBay (Legendsverse)" + (f": US$ {mercado:.2f}" if mercado else ""))
+        k3.metric("Tiendas en Perú (promedio)", _soles(t["precio_pen"].mean()) if len(t) else "—",
+                  delta=(pct((t["precio_pen"].mean() - p_ret) / p_ret) + " vs retail") if len(t) and p_ret else None,
+                  delta_color="inverse")
+        k4.metric("Reventa (promedio)", _soles(r["precio_pen"].mean()) if len(r) else "—",
+                  delta=(pct((r["precio_pen"].mean() - p_ret) / p_ret) + " vs retail") if len(r) and p_ret else None,
+                  delta_color="inverse")
+        faltan = [n for n, ok in [("retail oficial", p_ret), ("valor en EE. UU.", mercado),
+                                  ("precios en tiendas de Perú", len(t)), ("avisos de reventa", len(r))] if not ok]
+        if faltan:
+            st.info("**No hay datos de " + ", ".join(faltan) + "** para esta figura. "
+                    "Abajo tienes el sobreprecio típico por canal como referencia.")
+
+    if len(t):
+        st.markdown("#### En tiendas de Perú")
+        v = t[["tienda", "titulo", "vendedor", "precio_pen", "precio_lista_pen", "anio", "confianza", "url"]].copy()
+        if p_ret:
+            v["Sobreprecio"] = ((v["precio_pen"] - p_ret) / p_ret).map(pct)
+        st.dataframe(v.rename(columns={"tienda": "Tienda", "titulo": "Producto", "vendedor": "Vendedor",
+                                       "precio_pen": "Precio S/", "precio_lista_pen": "Lista S/",
+                                       "anio": "Año (estimado)", "confianza": "Coincidencia", "url": "Link"}),
+                     hide_index=True, use_container_width=True,
+                     column_config={"Link": st.column_config.LinkColumn("Link", display_text="ver")})
+        st.caption("Precios observados el 14-11-2026. «Coincidencia baja» = el título trae palabras extra: puede ser "
+                   "otra versión del personaje o un pack.")
+    if len(r):
+        st.markdown("#### Reventa (avisos reales)")
+        v = r[["canal", "vendedor", "estado", "precio_pen", "distrito", "linea_interpretada", "notas"]].copy()
+        if p_ret:
+            v["Sobreprecio"] = ((v["precio_pen"] - p_ret) / p_ret).map(pct)
+        st.dataframe(v.rename(columns={"canal": "Canal", "vendedor": "Vendedor", "estado": "Estado",
+                                       "precio_pen": "Precio S/", "distrito": "Zona",
+                                       "linea_interpretada": "Línea según el aviso", "notas": "Notas"}),
+                     hide_index=True, use_container_width=True)
+        st.caption("Avisos transcritos de capturas (vendedores anonimizados). Se emparejan por nombre: si el aviso "
+                   "no dice la línea, puede ser otra versión del mismo personaje.")
+    st.markdown("#### Sobreprecio promedio por canal (todas las figuras)")
+    _tabla_canales()
+
+
+def vista_comprador():
+    st.markdown("Si coleccionas un **Build-A-Figure**, marca las piezas que ya tienes y te armamos el plan para "
+                "conseguir las que faltan.")
+    texto = _texto_busqueda("baf", "¿Qué BAF quieres armar?")
+
+    c = parse(normaliza_pedido(texto), meta) if texto else None
     if c:
         with st.sidebar:
             st.caption("Cómo se interpretó tu pedido")
@@ -122,7 +238,7 @@ def vista_comprador():
                    "Envío y tiempo son un modelo. eBay = precio + envío a Perú si se vio, sin aranceles.")
     with der:
         centro = DISTRITOS[distrito]
-        m = folium.Map(location=centro, zoom_start=11, tiles="cartodbpositron")
+        m = folium.Map(location=centro, zoom_start=11, tiles="OpenStreetMap")
         folium.Marker(centro, tooltip=f"Tú ({distrito})", icon=folium.Icon(color="red", icon="home")).add_to(m)
         for r in plan.dropna(subset=["lat"]).itertuples():
             folium.Marker([r.lat, r.lon], tooltip=f"{r.pieza}: {r.figura} · S/ {r.precio_pen:.0f}",
@@ -220,14 +336,18 @@ def vista_vendedor():
 
 
 st.title("🧸 Figuras Lima · Marvel Legends")
-st.caption("Arma tu BAF pieza por pieza con vendedores de Lima, o fija tu precio de reventa como vendedor.")
+st.caption("Busca cualquier figura y mira su retail oficial, su precio en tiendas de Perú y en reventa, y cuánto "
+           "sobreprecio cobra cada canal.")
 with st.sidebar:
     st.write("Parser: **" + ("Claude (LLM)" if os.getenv("ANTHROPIC_API_KEY") else "Reglas locales (sin API key)") + "**")
     st.caption(f"Catálogo y precios de referencia: Legendsverse (USD). Avisos: **{len(reales)} reales** transcritos de "
                "Marketplace, eBay y Tai Loy, más avisos **simulados** de relleno donde no hay datos reales.")
 
-tab_c, tab_w, tab_v = st.tabs(["🛒 Soy coleccionista", "🔎 Por wave / línea", "🏪 Soy vendedor"])
-with tab_c:
+tab_f, tab_b, tab_w, tab_v = st.tabs(["🔎 Buscar figura", "🧩 Armar un BAF", "📦 Por wave / línea",
+                                       "🏪 Soy vendedor"])
+with tab_f:
+    vista_figura()
+with tab_b:
     vista_comprador()
 with tab_w:
     vista_wave()
