@@ -1,0 +1,648 @@
+id,baf,wave,anio,pieza,figura,condicion,incluye_pieza,precio_pen,vendedor,distrito,lat,lon
+1,Abomination,Abomination,2020,Head,Mach-I,nueva,True,115,Tienda_Titan,San Miguel,-12.0766,-77.08415
+2,Abomination,Abomination,2020,Head,Mach-I,nueva,True,80,Tienda_Vault,Magdalena,-12.08823,-77.0742
+3,Abomination,Abomination,2016,Head,Scarlet Witch,nueva,True,215,Tienda_Akiba,Jesus Maria,-12.0693,-77.04806
+4,Abomination,Abomination,2020,Left Arm,Mar-Vell,nueva,True,140,Tienda_Akiba,Callao,-12.05316,-77.11624
+5,Abomination,Abomination,2020,Left leg,Iron Man,abierta,True,170,Tienda_Hobby,Jesus Maria,-12.06748,-77.04939
+6,Abomination,Abomination,2020,Left leg,Iron Man,nueva,True,160,Tienda_Retro,San Miguel,-12.07443,-77.08655
+7,Abomination,Abomination,2016,Left leg,Iron Skull,nueva,True,95,Tienda_Retro,San Isidro,-12.09711,-77.0357
+8,Abomination,Abomination,2020,Right Arm,Rage,nueva,True,105,Tienda_Mecha,San Juan de Lurigancho,-11.98004,-77.00651
+9,Abomination,Abomination,2020,Right Arm,Rage,nueva,True,100,Tienda_Vault,San Isidro,-12.09411,-77.03402
+10,Abomination,Abomination,2016,Right Arm,Secret War Captain America,abierta,True,40,Tienda_Shelf,La Molina,-12.08763,-76.90857
+11,Abomination,Abomination,2020,Right leg,Leader,nueva,True,100,Tienda_Shelf,San Isidro,-12.09735,-77.03573
+12,Abomination,Abomination,2016,Right leg,Energized Emissaries,abierta,True,55,Tienda_Hobby,Jesus Maria,-12.07247,-77.04742
+13,Abomination,Abomination,2016,Right leg,Energized Emissaries,nueva,True,55,Tienda_Akiba,San Juan de Lurigancho,-11.97422,-77.00545
+14,Abomination,Abomination,2020,Torso,Ms. Marvel,nueva,True,55,Tienda_Titan,Magdalena,-12.08844,-77.07546
+15,Abomination,Abomination,2016,Torso,Eel,nueva,True,120,Tienda_Retro,Surco,-12.14267,-76.99182
+16,Abomination,Abomination,2016,Torso,Eel,nueva,True,135,Tienda_Kaiju,San Isidro,-12.099,-77.03934
+17,Absorbing Man,Absorbing Man,2016,Arms,Edge Of Spider-Verse,abierta,True,230,Tienda_Titan,Magdalena,-12.08662,-77.07116
+18,Absorbing Man,Absorbing Man,2016,Left Leg,Villains Of The Night,abierta,True,140,Tienda_Vault,Magdalena,-12.09317,-77.07108
+19,Absorbing Man,Absorbing Man,2016,Right Leg,Superior Foes Of Spider-Man,nueva,True,50,Tienda_Nexus,San Miguel,-12.07677,-77.0883
+20,Absorbing Man,Absorbing Man,2016,Torso,Superior Foes Of Spider-Man,nueva,True,115,Tienda_Mecha,San Isidro,-12.09451,-77.03343
+21,Absorbing Man,Absorbing Man,2016,Weapon,Edge Of Spider-Verse,nueva,False,80,Tienda_Nexus,Callao,-12.05611,-77.11921
+22,Absorbing Man,Absorbing Man,2016,Weapon,Edge Of Spider-Verse,nueva,True,130,Tienda_Mecha,Surco,-12.14684,-76.9949
+23,Allfather,Allfather,2015,Arms,Avenging Allies,nueva,True,105,Tienda_Vault,Los Olivos,-11.97287,-77.06982
+24,Allfather,Allfather,2015,Arms,Avenging Allies,abierta,True,165,Tienda_Retro,La Molina,-12.08346,-76.91184
+25,Allfather,Allfather,2015,Head,Maidens Of Might,nueva,True,105,Tienda_Nexus,San Miguel,-12.07884,-77.08452
+26,Allfather,Allfather,2015,Left Leg,Iron Fist,nueva,True,140,Tienda_Kaiju,Barranco,-12.13825,-77.01749
+27,Allfather,Allfather,2015,Left Leg,Iron Fist,abierta,False,115,Tienda_Retro,San Isidro,-12.09576,-77.03264
+28,Allfather,Allfather,2015,Torso,Hawkeye,abierta,True,80,Tienda_Titan,Callao,-12.05776,-77.11939
+29,Allfather,Allfather,2015,Torso,Hawkeye,abierta,False,80,Tienda_Akiba,San Juan de Lurigancho,-11.9736,-77.00644
+30,Annihilus,Annihilus,2007,Left Arm,Emma Frost,abierta,True,90,Tienda_Akiba,San Juan de Lurigancho,-11.98011,-77.01164
+31,Annihilus,Annihilus,2007,Left Arm,Emma Frost,abierta,True,95,Tienda_Nexus,Miraflores,-12.11774,-77.02766
+32,Annihilus,Annihilus,2007,Left Leg,Emma Frost,nueva,True,80,Tienda_Titan,Miraflores,-12.12118,-77.03076
+33,Annihilus,Annihilus,2007,Left Leg,Emma Frost,abierta,True,85,Tienda_Nexus,San Juan de Lurigancho,-11.98053,-77.00894
+34,Annihilus,Annihilus,2007,Left Wing,Banshee,nueva,True,80,Tienda_Legend,La Molina,-12.08386,-76.90664
+35,Annihilus,Annihilus,2007,Left Wing,Ultimate Iron Man,nueva,True,75,Tienda_Akiba,Jesus Maria,-12.07238,-77.0517
+36,Annihilus,Annihilus,2007,Left Wing,Ultimate Iron Man,nueva,True,80,Tienda_Nexus,Magdalena,-12.09374,-77.07157
+37,Annihilus,Annihilus,2007,Right Arm,X3 Beast,nueva,True,115,Tienda_Vault,Los Olivos,-11.97334,-77.07343
+38,Annihilus,Annihilus,2007,Right Leg,X3 Beast,abierta,True,90,Tienda_Nexus,Miraflores,-12.12365,-77.03269
+39,Annihilus,Annihilus,2007,Right Wing,Hercules,nueva,True,120,Tienda_Titan,Magdalena,-12.09324,-77.06855
+40,Apocalypse,Apocalypse,2005,Chest,X-23,abierta,True,105,Tienda_Akiba,San Isidro,-12.09672,-77.03711
+41,Apocalypse,Apocalypse,2018,Head,Gladiator,abierta,False,215,Tienda_Vault,Callao,-12.05408,-77.11401
+42,Apocalypse,Apocalypse,2018,Head,Gladiator,nueva,True,295,Tienda_Akiba,La Molina,-12.08819,-76.91301
+43,Apocalypse,Apocalypse,2018,Left Arm,Sabretooth,abierta,True,250,Tienda_Kaiju,Jesus Maria,-12.0702,-77.05107
+44,Apocalypse,Apocalypse,2018,Left Leg,Psylocke,nueva,True,195,Tienda_Kaiju,Magdalena,-12.09311,-77.06848
+45,Apocalypse,Apocalypse,2018,Right Arm,Magneto,nueva,True,165,Tienda_Shelf,La Molina,-12.08903,-76.90892
+46,Apocalypse,Apocalypse,2005,Right Arm,Sasquatch,abierta,True,155,Tienda_Nexus,Lima Centro,-12.04412,-77.04113
+47,Apocalypse,Apocalypse,2018,Right Leg,Multiple Man,nueva,True,255,Tienda_Hobby,Surco,-12.14233,-76.99206
+48,Apocalypse,Apocalypse,2005,Right Leg,Iron Fist,nueva,True,115,Tienda_Legend,Jesus Maria,-12.06986,-77.05448
+49,Apocalypse,Apocalypse,2018,Torso,Storm,nueva,True,150,Tienda_Akiba,San Juan de Lurigancho,-11.97478,-77.00497
+50,Apocalypse,Apocalypse,2018,Torso,Storm,abierta,True,175,Tienda_Vault,Los Olivos,-11.97074,-77.07177
+51,Apocalypse,Apocalypse,2018,Tubes,Wolverine,abierta,True,170,Tienda_Akiba,La Molina,-12.08684,-76.91155
+52,Apocalypse,Apocalypse,2018,Tubes,Wolverine,nueva,True,155,Tienda_Akiba,Los Olivos,-11.97104,-77.06611
+53,Ares,Ares,2008,Head,Ultimate War Machine,abierta,False,50,Tienda_Legend,Callao,-12.05387,-77.11921
+54,Ares,Ares,2008,Head,Ultimate War Machine,nueva,True,95,Tienda_Vault,San Juan de Lurigancho,-11.97697,-77.01008
+55,Ares,Ares,2008,Left Arm,Human Torch,nueva,False,80,Tienda_Shelf,Magdalena,-12.08935,-77.06873
+56,Ares,Ares,2008,Left Leg,Crossbones,abierta,False,140,Tienda_Kaiju,Jesus Maria,-12.06749,-77.05291
+57,Ares,Ares,2008,Left Leg,Crossbones,nueva,True,180,Tienda_Retro,Callao,-12.05508,-77.11993
+58,Ares,Ares,2008,Lower Torso,Guardian,nueva,False,95,Tienda_Legend,San Juan de Lurigancho,-11.97905,-77.00595
+59,Ares,Ares,2008,Lower Torso,Guardian,abierta,True,135,Tienda_Legend,Lima Centro,-12.04301,-77.03967
+60,Ares,Ares,2008,Right Arm,Scarlet Spider,abierta,False,60,Tienda_Nexus,San Miguel,-12.07312,-77.08401
+61,Ares,Ares,2008,Right Arm,Scarlet Spider,abierta,True,90,Tienda_Nexus,Magdalena,-12.08844,-77.07223
+62,Ares,Ares,2008,Right Leg,Vision,abierta,True,85,Tienda_Vault,Los Olivos,-11.97283,-77.06727
+63,Ares,Ares,2008,Upper Torso,Kang,nueva,True,100,Tienda_Retro,Jesus Maria,-12.07352,-77.04764
+64,Ares,Ares,2008,Weapons,Heroes Reborn: Iron Man,nueva,True,80,Tienda_Titan,Los Olivos,-11.97157,-77.0681
+65,Armadillo,Armadillo,2022,Left Arm,J. Jonah Jameson,nueva,True,115,Tienda_Akiba,Jesus Maria,-12.06629,-77.04732
+66,Armadillo,Armadillo,2022,Left Leg,Black & Gold Suit Spider-Man,nueva,True,75,Tienda_Kaiju,Barranco,-12.14029,-77.02332
+67,Armadillo,Armadillo,2022,Left Leg,Black & Gold Suit Spider-Man,nueva,False,45,Tienda_Akiba,San Juan de Lurigancho,-11.97479,-77.00627
+68,Armadillo,Armadillo,2022,Right Arm,Morlun,nueva,True,85,Tienda_Nexus,Surco,-12.14741,-76.99481
+69,Armadillo,Armadillo,2022,Right Arm,Morlun,nueva,True,70,Tienda_Retro,Magdalena,-12.0871,-77.07019
+70,Armadillo,Armadillo,2022,Right Leg,Spider-Man Miles Morales,nueva,True,130,Tienda_Retro,San Juan de Lurigancho,-11.97674,-77.00619
+71,Armadillo,Armadillo,2022,Torso,Shriek,abierta,True,65,Tienda_Shelf,Los Olivos,-11.9714,-77.07146
+72,Arnim Zola,Arnim Zola,2012,Head,Wrecking Crew,abierta,True,280,Tienda_Kaiju,San Juan de Lurigancho,-11.97851,-77.00661
+73,Arnim Zola,Arnim Zola,2012,Head,Wrecking Crew,nueva,False,170,Tienda_Hobby,San Isidro,-12.09963,-77.03715
+74,Arnim Zola,Arnim Zola,2012,Left Arm,Dark Wolverine,nueva,True,220,Tienda_Legend,Barranco,-12.13944,-77.02252
+75,Arnim Zola,Arnim Zola,2012,Left Leg,Drax,nueva,False,65,Tienda_Retro,La Molina,-12.08933,-76.90877
+76,Arnim Zola,Arnim Zola,2012,Left Leg,Drax,nueva,False,55,Tienda_Kaiju,Miraflores,-12.12481,-77.03247
+77,Arnim Zola,Arnim Zola,2012,Right Arm,Fantomex,nueva,False,80,Tienda_Legend,San Juan de Lurigancho,-11.97803,-77.00643
+78,Arnim Zola,Arnim Zola,2012,Right Arm,Fantomex,nueva,True,100,Tienda_Nexus,Surco,-12.14528,-76.99409
+79,Arnim Zola,Arnim Zola,2012,Right Leg,Captain America,nueva,False,55,Tienda_Legend,San Isidro,-12.09648,-77.0364
+80,Arnim Zola,Arnim Zola,2012,Torso,Madames,nueva,True,105,Tienda_Mecha,La Molina,-12.08297,-76.90772
+81,Arnim Zola,Arnim Zola,2012,Torso,Madames,nueva,True,130,Tienda_Titan,Miraflores,-12.118,-77.03137
+82,Attuma,Wakanda Forever,2022,Head,Okoye,nueva,False,55,Tienda_Legend,San Miguel,-12.07546,-77.08998
+83,Attuma,Wakanda Forever,2022,Left arm,Namor,abierta,True,55,Tienda_Hobby,Surco,-12.14569,-76.99202
+84,Attuma,Wakanda Forever,2022,Left leg,Black Panther,nueva,True,75,Tienda_Hobby,Surco,-12.14795,-76.99047
+85,Blackheart,Strange Tales - Blackheart,2024,Head,Moon Knight,nueva,True,365,Tienda_Titan,Lima Centro,-12.04674,-77.0403
+86,Blackheart,Strange Tales - Blackheart,2024,Head,Moon Knight,abierta,True,350,Tienda_Akiba,Los Olivos,-11.97038,-77.06628
+87,Blackheart,Strange Tales - Blackheart,2024,Left Arm,Dracula,abierta,True,90,Tienda_Akiba,La Molina,-12.08535,-76.90892
+88,Blackheart,Strange Tales - Blackheart,2024,Right Arm,Lilith,nueva,True,100,Tienda_Nexus,Magdalena,-12.09104,-77.07444
+89,Blackheart,Strange Tales - Blackheart,2024,Right Arm,Lilith,nueva,True,140,Tienda_Kaiju,Lima Centro,-12.04679,-77.04243
+90,Blackheart,Strange Tales - Blackheart,2024,Right Leg,Daimon Hellstrom,nueva,False,50,Tienda_Retro,Callao,-12.05465,-77.11452
+91,Blackheart,Strange Tales - Blackheart,2024,Torso,Bloodstorm,nueva,True,80,Tienda_Hobby,Miraflores,-12.12073,-77.02992
+92,Blob,Blob,2007,Hands,X3 Juggernaut,nueva,True,210,Tienda_Akiba,Barranco,-12.14238,-77.02216
+93,Blob,Blob,2007,Head,Thor,nueva,True,105,Tienda_Vault,La Molina,-12.08715,-76.90637
+94,Blob,Blob,2007,Head,Thor,nueva,True,100,Tienda_Akiba,Barranco,-12.13639,-77.02118
+95,Blob,Blob,2007,Left arm,Quicksilver,nueva,True,100,Tienda_Hobby,Surco,-12.14486,-76.99347
+96,Blob,Blob,2007,Left arm,Quicksilver,abierta,True,110,Tienda_Nexus,Lima Centro,-12.04918,-77.04171
+97,Blob,Blob,2007,Left leg,Xorn,abierta,True,120,Tienda_Kaiju,San Juan de Lurigancho,-11.98042,-77.00542
+98,Blob,Blob,2007,Right leg,Yellowjacket,nueva,False,85,Tienda_Retro,Jesus Maria,-12.06804,-77.05302
+99,Blob,Blob,2007,Upper Torso,She-Hulk,nueva,True,140,Tienda_Hobby,Miraflores,-12.11863,-77.02784
+100,Bonebreaker,Bonebreaker,2022,Barrels,Havok,nueva,True,90,Tienda_Nexus,La Molina,-12.08526,-76.91075
+101,Bonebreaker,Bonebreaker,2022,Head,Maggot,abierta,True,65,Tienda_Vault,Magdalena,-12.08625,-77.07097
+102,Bonebreaker,Bonebreaker,2022,Head,Maggot,nueva,False,40,Tienda_Mecha,Los Olivos,-11.96697,-77.07231
+103,Bonebreaker,Bonebreaker,2022,Left Wheels,Siryn,nueva,True,85,Tienda_Titan,La Molina,-12.08943,-76.90607
+104,Bonebreaker,Bonebreaker,2022,Lower Torso,Sabretooth,nueva,True,40,Tienda_Kaiju,Surco,-12.14824,-76.99231
+105,Bonebreaker,Bonebreaker,2022,Right Wheels,Darwin,abierta,True,70,Tienda_Shelf,San Isidro,-12.0962,-77.03958
+106,Bonebreaker,Bonebreaker,2022,Torso,Vulcan,nueva,True,50,Tienda_Mecha,Jesus Maria,-12.07062,-77.05153
+107,Caliban,Caliban,2019,Head,Beast,nueva,True,395,Tienda_Vault,San Juan de Lurigancho,-11.98013,-77.01139
+108,Caliban,Caliban,2019,Head,Beast,nueva,False,380,Tienda_Hobby,La Molina,-12.08789,-76.91275
+109,Caliban,Caliban,2019,Left Arm,Forge,abierta,True,150,Tienda_Kaiju,Magdalena,-12.09051,-77.06898
+110,Caliban,Caliban,2019,Left Leg,Weapon X,nueva,True,135,Tienda_Mecha,San Isidro,-12.09403,-77.03951
+111,Caliban,Caliban,2019,Left Leg,Weapon X,nueva,True,125,Tienda_Retro,San Miguel,-12.07829,-77.08806
+112,Caliban,Caliban,2019,Right Arm,Skullbuster,nueva,True,205,Tienda_Mecha,Surco,-12.14682,-76.98983
+113,Caliban,Caliban,2019,Right Leg,Blink,nueva,True,125,Tienda_Titan,San Miguel,-12.07412,-77.09073
+114,Caliban,Caliban,2019,Torso,Jubilee,abierta,True,175,Tienda_Titan,Barranco,-12.14079,-77.02135
+115,Caliban,Caliban,2019,Torso,Jubilee,nueva,True,185,Tienda_Shelf,Miraflores,-12.12196,-77.02649
+116,Captain America,Captain America,2021,Base & Redwing,Loki,nueva,True,85,Tienda_Legend,San Isidro,-12.09854,-77.03557
+117,Captain America,Captain America,2021,External Right Wing,Baron Zemo,nueva,True,75,Tienda_Akiba,San Miguel,-12.07412,-77.08446
+118,Captain America,Captain America,2021,Inner Wings,The Vision,nueva,True,50,Tienda_Akiba,Jesus Maria,-12.07049,-77.05145
+119,Captain America,Captain America,2021,Middle Left Wing,Scarlet Witch,nueva,False,90,Tienda_Vault,La Molina,-12.08376,-76.90868
+120,Ch'od,Ch'od,2023,Head,Fang,nueva,True,120,Tienda_Retro,Lima Centro,-12.04337,-77.04455
+121,Ch'od,Ch'od,2023,Left Arm,Chamber,nueva,True,90,Tienda_Retro,Jesus Maria,-12.06707,-77.04776
+122,Ch'od,Ch'od,2023,Left Leg,Monet St. Croix,nueva,True,110,Tienda_Titan,Callao,-12.05311,-77.11655
+123,Ch'od,Ch'od,2023,Right Arm,Starjammer Corsair,abierta,True,90,Tienda_Shelf,Jesus Maria,-12.0737,-77.05177
+124,Ch'od,Ch'od,2023,Torso,Kid Omega,nueva,False,65,Tienda_Kaiju,Lima Centro,-12.04792,-77.04605
+125,Colossus,Colossus,2021,Head,Sabretooth,nueva,False,70,Tienda_Titan,Barranco,-12.13799,-77.02079
+126,Colossus,Colossus,2021,Left arm,Rogue,abierta,True,65,Tienda_Legend,San Juan de Lurigancho,-11.97395,-77.00442
+127,Colossus,Colossus,2021,Left leg,Cyclops,nueva,True,45,Tienda_Titan,San Juan de Lurigancho,-11.97407,-77.00838
+128,Colossus,Colossus,2021,Right Arm,Iceman,nueva,True,170,Tienda_Akiba,San Juan de Lurigancho,-11.97964,-77.00856
+129,Colossus,Colossus,2021,Right leg,Legion,abierta,False,85,Tienda_Kaiju,Los Olivos,-11.96911,-77.0681
+130,Controller,Controller,2022,Head,Thor,nueva,False,75,Tienda_Legend,Los Olivos,-11.97222,-77.07113
+131,Controller,Controller,2022,Left Arm,Quake,nueva,True,70,Tienda_Legend,San Miguel,-12.07362,-77.08648
+132,Controller,Controller,2022,Left Leg,Madame Hydra,abierta,True,60,Tienda_Legend,Callao,-12.05739,-77.11996
+133,Controller,Controller,2022,Left Leg,Madame Hydra,abierta,True,70,Tienda_Legend,Barranco,-12.13743,-77.01743
+134,Controller,Controller,2022,Right Arm,U.s. Agent,abierta,False,80,Tienda_Nexus,Barranco,-12.13967,-77.02378
+135,Controller,Controller,2022,Right Arm,U.s. Agent,nueva,True,85,Tienda_Hobby,Jesus Maria,-12.06972,-77.05296
+136,Controller,Controller,2022,Right Leg,Blue Marvel,nueva,True,80,Tienda_Legend,San Miguel,-12.07732,-77.08882
+137,Controller,Controller,2022,Torso,Speedball,nueva,True,45,Tienda_Kaiju,Barranco,-12.13962,-77.02384
+138,Cosmo,Guardians of the Galaxy Vol. 3,2023,Helmet & tail,Adam Warlock,nueva,True,55,Tienda_Vault,Lima Centro,-12.0442,-77.04533
+139,Cosmo,Guardians of the Galaxy Vol. 3,2023,Left back leg,Nebula,abierta,True,115,Tienda_Akiba,San Juan de Lurigancho,-11.98077,-77.00737
+140,Cosmo,Guardians of the Galaxy Vol. 3,2023,Right back leg,Mantis,nueva,True,115,Tienda_Hobby,La Molina,-12.08575,-76.91305
+141,Cosmo,Guardians of the Galaxy Vol. 3,2023,Torso,Rocket Raccoon,nueva,True,100,Tienda_Akiba,San Miguel,-12.07486,-77.08845
+142,Crimson Dynamo,Crimson Dynamo,2019,Head,Winter Soldier,nueva,True,235,Tienda_Retro,San Miguel,-12.07885,-77.08379
+143,Crimson Dynamo,Crimson Dynamo,2019,Left Arm,Red Guardian,nueva,True,80,Tienda_Hobby,Magdalena,-12.08647,-77.07039
+144,Crimson Dynamo,Crimson Dynamo,2019,Left Leg,Black Widow,abierta,True,145,Tienda_Nexus,La Molina,-12.08682,-76.91363
+145,Crimson Dynamo,Crimson Dynamo,2019,Left Leg,Black Widow,nueva,True,120,Tienda_Akiba,Magdalena,-12.08726,-77.07184
+146,Crimson Dynamo,Crimson Dynamo,2019,Right Arm,Crossbones,nueva,False,95,Tienda_Akiba,Callao,-12.05796,-77.11694
+147,Crimson Dynamo,Crimson Dynamo,2019,Right Leg,Spymaster,abierta,False,55,Tienda_Mecha,La Molina,-12.08409,-76.911
+148,Crimson Dynamo,Crimson Dynamo,2019,Torso,Yelena Belova,nueva,False,80,Tienda_Mecha,San Isidro,-12.09716,-77.03361
+149,Cull Obsidian,Cull Obsidian,2018,Head,Wasp,nueva,False,30,Tienda_Kaiju,San Isidro,-12.09525,-77.03482
+150,Cull Obsidian,Cull Obsidian,2018,Head,Wasp,nueva,True,45,Tienda_Mecha,Barranco,-12.13742,-77.01955
+151,Cull Obsidian,Cull Obsidian,2018,Left Arm,Thor,abierta,True,175,Tienda_Titan,San Juan de Lurigancho,-11.97462,-77.00974
+152,Cull Obsidian,Cull Obsidian,2018,Left Leg,Ant-Man,abierta,True,135,Tienda_Retro,San Isidro,-12.09854,-77.0337
+153,Cull Obsidian,Cull Obsidian,2018,Right Arm,Malekith,nueva,True,80,Tienda_Legend,Surco,-12.14712,-76.98981
+154,Cull Obsidian,Cull Obsidian,2018,Right Arm,Malekith,nueva,True,60,Tienda_Mecha,Magdalena,-12.09361,-77.0703
+155,Cull Obsidian,Cull Obsidian,2018,Right Leg,Black Knight,nueva,False,160,Tienda_Vault,La Molina,-12.08801,-76.91325
+156,Cull Obsidian,Cull Obsidian,2018,Torso,Black Widow,nueva,True,90,Tienda_Akiba,Los Olivos,-11.97199,-77.06708
+157,Cull Obsidian,Cull Obsidian,2018,Torso,Black Widow,abierta,True,115,Tienda_Retro,Miraflores,-12.12287,-77.02954
+158,Demogoblin,Demogoblin,2019,Arms,Superior Octopus,abierta,True,205,Tienda_Retro,Los Olivos,-11.97175,-77.07171
+159,Demogoblin,Demogoblin,2019,Arms,Superior Octopus,nueva,True,220,Tienda_Nexus,Callao,-12.05857,-77.11949
+160,Demogoblin,Demogoblin,2019,Glider,White Rabbit,abierta,True,95,Tienda_Shelf,Lima Centro,-12.04642,-77.0459
+161,Demogoblin,Demogoblin,2019,Glider,White Rabbit,nueva,True,110,Tienda_Retro,Miraflores,-12.11975,-77.03346
+162,Demogoblin,Demogoblin,2019,Head,Vulture,abierta,True,320,Tienda_Kaiju,Jesus Maria,-12.07,-77.05081
+163,Demogoblin,Demogoblin,2019,Head,Vulture,abierta,True,335,Tienda_Retro,Miraflores,-12.12373,-77.03225
+164,Demogoblin,Demogoblin,2019,Left Leg,Spider-Man,abierta,False,65,Tienda_Kaiju,Surco,-12.14518,-76.99389
+165,Demogoblin,Demogoblin,2019,Right Leg,Spider-Man,nueva,True,100,Tienda_Akiba,Miraflores,-12.11953,-77.03187
+166,Demogoblin,Demogoblin,2019,Right Leg,Spider-Man,abierta,True,135,Tienda_Shelf,San Juan de Lurigancho,-11.97967,-77.00765
+167,Demogoblin,Demogoblin,2019,Torso,Shang-Chi,abierta,True,210,Tienda_Nexus,Lima Centro,-12.04969,-77.04189
+168,Demogoblin,Demogoblin,2019,Torso,Shang-Chi,nueva,True,195,Tienda_Kaiju,Lima Centro,-12.04812,-77.04365
+169,Dormammu,Dormammu,2017,Chest,Iron Fist,abierta,True,265,Tienda_Nexus,Lima Centro,-12.04374,-77.03939
+170,Dormammu,Dormammu,2017,Chest,Iron Fist,nueva,True,215,Tienda_Vault,Surco,-12.1415,-76.99646
+171,Dormammu,Dormammu,2017,Head,Doctor Strange,nueva,True,55,Tienda_Legend,Jesus Maria,-12.07334,-77.04946
+172,Dormammu,Dormammu,2017,Head,Doctor Strange,nueva,True,45,Tienda_Hobby,Miraflores,-12.12485,-77.02617
+173,Dormammu,Dormammu,2017,Left Arm,Masters Of Magic,nueva,True,65,Tienda_Hobby,San Juan de Lurigancho,-11.97872,-77.00789
+174,Dormammu,Dormammu,2017,Left Leg,Karl Mordo,nueva,True,115,Tienda_Shelf,La Molina,-12.08677,-76.90898
+175,Dormammu,Dormammu,2017,Right Arm,Masters Of Magic,nueva,True,190,Tienda_Nexus,Miraflores,-12.12445,-77.02657
+176,Dormammu,Dormammu,2017,Torso,Mystic Rivals,abierta,True,55,Tienda_Retro,Lima Centro,-12.04262,-77.04618
+177,Executioner,Executioner,2025,Head & Axe,Iron Man (Mark 72),nueva,True,140,Tienda_Shelf,Callao,-12.05647,-77.12198
+178,Executioner,Executioner,2025,Head & Axe,Iron Man (Mark 72),nueva,True,145,Tienda_Kaiju,San Isidro,-12.09518,-77.03502
+179,Executioner,Executioner,2025,Left Leg,Phantom Rider,nueva,True,130,Tienda_Hobby,San Isidro,-12.09469,-77.03487
+180,Executioner,Executioner,2025,Right Arm,Warbow,nueva,False,40,Tienda_Vault,San Juan de Lurigancho,-11.97384,-77.00703
+181,Executioner,Executioner,2025,Torso,Enchantress,nueva,True,90,Tienda_Retro,La Molina,-12.0827,-76.90989
+182,Fin Fang Foom,Fin Fang Foom,2008,Head,She-Hulk,nueva,True,125,Tienda_Legend,Magdalena,-12.08884,-77.07201
+183,Fin Fang Foom,Fin Fang Foom,2008,Head,She-Hulk,nueva,True,125,Tienda_Kaiju,Miraflores,-12.11754,-77.02693
+184,Fin Fang Foom,Fin Fang Foom,2008,Left Arm,The End Hulk,nueva,True,1735,Tienda_Kaiju,San Miguel,-12.0806,-77.08677
+185,Fin Fang Foom,Fin Fang Foom,2008,Left Arm,The End Hulk,abierta,True,1465,Tienda_Shelf,La Molina,-12.08624,-76.9082
+186,Fin Fang Foom,Fin Fang Foom,2008,Left Leg,Classic Hulk,nueva,True,410,Tienda_Hobby,Jesus Maria,-12.0679,-77.05397
+187,Fin Fang Foom,Fin Fang Foom,2008,Right Leg,Absorbing Man,nueva,False,195,Tienda_Akiba,Magdalena,-12.09226,-77.07498
+188,Fin Fang Foom,Fin Fang Foom,2008,Tail,King Hulk,nueva,True,405,Tienda_Retro,Los Olivos,-11.97125,-77.06707
+189,Fin Fang Foom,Fin Fang Foom,2008,Tail,King Hulk,abierta,True,385,Tienda_Hobby,Jesus Maria,-12.0727,-77.04876
+190,Fin Fang Foom,Fin Fang Foom,2008,Upper Torso,Skaar: Son Of Hulk,nueva,True,465,Tienda_Mecha,Magdalena,-12.09047,-77.07297
+191,Galactus,Galactus,2005,Chest,Deathlok,nueva,False,95,Tienda_Titan,Magdalena,-12.08952,-77.0695
+192,Galactus,Galactus,2005,Head,Professor X,nueva,True,175,Tienda_Mecha,San Juan de Lurigancho,-11.97946,-77.00969
+193,Galactus,Galactus,2005,Left Arm,Hulk,nueva,True,205,Tienda_Mecha,San Isidro,-12.09382,-77.03709
+194,Galactus,Galactus,2005,Left Arm,Hulk,abierta,True,260,Tienda_Legend,Jesus Maria,-12.06641,-77.04948
+195,Galactus,Galactus,2005,Left Leg,Bullseye,nueva,True,50,Tienda_Titan,Barranco,-12.14177,-77.01812
+196,Galactus,Galactus,2005,Right Arm,Doctor Strange,nueva,True,140,Tienda_Titan,Callao,-12.05606,-77.12068
+197,Galactus,Galactus,2005,Right Arm,Doctor Strange,abierta,False,120,Tienda_Titan,San Miguel,-12.07911,-77.08919
+198,Giant Man,Giant Man,2016,Head,Captain America,abierta,True,225,Tienda_Titan,Magdalena,-12.08786,-77.06856
+199,Giant Man,Giant Man,2016,Head,Captain America,nueva,True,220,Tienda_Shelf,San Isidro,-12.09543,-77.03739
+200,Giant Man,Giant Man,2016,Left Arm,Nick Fury,abierta,True,135,Tienda_Legend,La Molina,-12.08381,-76.91359
+201,Giant Man,Giant Man,2016,Left Arm,Nick Fury,nueva,True,110,Tienda_Shelf,San Miguel,-12.07756,-77.08691
+202,Giant Man,Giant Man,2006,Left Foot,Sabretooth,nueva,True,75,Tienda_Nexus,Surco,-12.14194,-76.99099
+203,Giant Man,Giant Man,2016,Left Leg,Black Panther,nueva,True,125,Tienda_Retro,La Molina,-12.08531,-76.91253
+204,Giant Man,Giant Man,2006,Left leg,Havok,nueva,True,135,Tienda_Retro,Lima Centro,-12.04694,-77.03927
+205,Giant Man,Giant Man,2006,Left leg,Havok,nueva,True,120,Tienda_Legend,Callao,-12.0526,-77.11999
+206,Giant Man,Giant Man,2016,Right Arm,Iron Man Mark 46,nueva,False,75,Tienda_Legend,Jesus Maria,-12.07066,-77.04989
+207,Giant Man,Giant Man,2006,Right Leg,Captain Britain,nueva,True,145,Tienda_Nexus,La Molina,-12.08972,-76.91318
+208,Giant Man,Giant Man,2006,Right hand,Thor,abierta,True,195,Tienda_Shelf,Los Olivos,-11.97164,-77.0678
+209,Giant Man,Giant Man,2016,Torso,Nuke,nueva,True,155,Tienda_Shelf,San Isidro,-12.09584,-77.0359
+210,Giant Man,Giant Man,2016,Torso,Nuke,nueva,True,140,Tienda_Akiba,Callao,-12.05383,-77.11865
+211,Giant Man,Giant Man,2006,Waist,Warbird,nueva,False,115,Tienda_Shelf,Los Olivos,-11.9723,-77.06766
+212,Giant Man,Giant Man,2006,Waist,Warbird,nueva,True,180,Tienda_Mecha,Jesus Maria,-12.06714,-77.04964
+213,Gilgamesh,Gilgamesh,2021,Head,Druig,nueva,True,60,Tienda_Legend,Surco,-12.14832,-76.99619
+214,Gilgamesh,Gilgamesh,2021,Head,Druig,nueva,True,65,Tienda_Legend,La Molina,-12.08275,-76.90899
+215,Gilgamesh,Gilgamesh,2021,Left Arm,Kingo,nueva,True,75,Tienda_Mecha,La Molina,-12.08461,-76.90873
+216,Gilgamesh,Gilgamesh,2021,Left Arm,Kingo,nueva,True,55,Tienda_Vault,Los Olivos,-11.96701,-77.06956
+217,Gilgamesh,Gilgamesh,2021,Left Leg,Sersi,nueva,True,55,Tienda_Titan,San Isidro,-12.09572,-77.03252
+218,Gilgamesh,Gilgamesh,2021,Left Leg,Sersi,nueva,True,70,Tienda_Legend,Lima Centro,-12.04621,-77.0434
+219,Gilgamesh,Gilgamesh,2021,Right Arm,Makkari,nueva,True,40,Tienda_Vault,Jesus Maria,-12.0728,-77.05127
+220,Gilgamesh,Gilgamesh,2021,Right Arm,Makkari,nueva,False,30,Tienda_Hobby,San Isidro,-12.10097,-77.03501
+221,Gilgamesh,Gilgamesh,2021,Right Leg,Phastos,abierta,True,40,Tienda_Akiba,Surco,-12.14693,-76.99059
+222,Gilgamesh,Gilgamesh,2021,Torso,Sprite,nueva,True,35,Tienda_Vault,San Juan de Lurigancho,-11.97653,-77.00898
+223,Gilgamesh,Gilgamesh,2021,Torso,Sprite,nueva,False,20,Tienda_Vault,Magdalena,-12.0926,-77.07106
+224,Green Goblin,Green Goblin,2014,Head,Spawn Of Symbiotes,nueva,True,125,Tienda_Mecha,La Molina,-12.08469,-76.90687
+225,Green Goblin,Green Goblin,2014,Head,Spawn Of Symbiotes,nueva,True,170,Tienda_Kaiju,Callao,-12.05487,-77.11856
+226,Green Goblin,Green Goblin,2014,Left Leg,Deadliest Foes,nueva,True,140,Tienda_Retro,San Isidro,-12.09875,-77.03938
+227,Green Goblin,Green Goblin,2014,Right Arm,The Amazing Spider-Man,nueva,False,160,Tienda_Mecha,San Isidro,-12.09598,-77.03301
+228,Green Goblin,Green Goblin,2014,Right Leg,Deadliest Foes,nueva,True,265,Tienda_Retro,Lima Centro,-12.05001,-77.04257
+229,Green Goblin,Green Goblin,2014,Right Leg,Deadliest Foes,nueva,True,335,Tienda_Nexus,Callao,-12.05328,-77.11989
+230,Groot,Groot,2014,Head,Rocket Raccoon,abierta,True,100,Tienda_Nexus,Barranco,-12.13616,-77.0231
+231,Groot,Groot,2014,Left Arm,Nova,nueva,True,140,Tienda_Retro,Callao,-12.05733,-77.11403
+232,Groot,Groot,2014,Left Leg,Gamora,abierta,True,95,Tienda_Nexus,Jesus Maria,-12.07321,-77.05445
+233,Groot,Groot,2014,Right Arm,Star-Lord,nueva,True,95,Tienda_Hobby,Miraflores,-12.11832,-77.0337
+234,Groot,Groot,2014,Right Arm,Star-Lord,nueva,True,130,Tienda_Akiba,San Isidro,-12.10089,-77.03386
+235,Groot,Groot,2014,Right Leg,Iron Man,abierta,False,60,Tienda_Retro,Los Olivos,-11.96911,-77.07197
+236,Groot,Groot,2014,Torso,Drax,nueva,False,75,Tienda_Mecha,San Isidro,-12.094,-77.03768
+237,Hit Monkey,Hit Monkey,2013,Arms,Conquering Heroes,nueva,True,195,Tienda_Kaiju,Jesus Maria,-12.06983,-77.04763
+238,Hit Monkey,Hit Monkey,2013,Body,Hulkettes,nueva,True,230,Tienda_Retro,Jesus Maria,-12.06765,-77.04845
+239,Hit Monkey,Hit Monkey,2013,Head,Warriors Of The Mind,nueva,True,115,Tienda_Nexus,San Isidro,-12.09412,-77.03467
+240,Hobgoblin,Hobgoblin,2015,Head,Warriors Of The Web,nueva,True,205,Tienda_Akiba,Los Olivos,-11.97296,-77.07017
+241,Hobgoblin,Hobgoblin,2015,Head,Warriors Of The Web,nueva,True,180,Tienda_Kaiju,Jesus Maria,-12.06973,-77.04719
+242,Hobgoblin,Hobgoblin,2015,Left Leg,Spider-Man,nueva,False,150,Tienda_Shelf,Magdalena,-12.09283,-77.07469
+243,Hobgoblin,Hobgoblin,2015,Right Arm,Spider-Man 2099,abierta,False,135,Tienda_Legend,La Molina,-12.08519,-76.91086
+244,Hobgoblin,Hobgoblin,2015,Torso,Warriors Of The Web,nueva,False,85,Tienda_Shelf,Surco,-12.14499,-76.99487
+245,Hulk,Hulk,2019,Head,Beta Ray Bill,abierta,True,245,Tienda_Retro,San Miguel,-12.07749,-77.08587
+246,Hulk,Hulk,2017,Head,Thor,nueva,True,205,Tienda_Mecha,Miraflores,-12.12309,-77.03079
+247,Hulk,Hulk,2019,Left Arm,Rock Python,nueva,False,30,Tienda_Nexus,San Miguel,-12.07881,-77.08352
+248,Hulk,Hulk,2017,Left Arm,Nine Realms Warriors,nueva,True,335,Tienda_Hobby,San Isidro,-12.0997,-77.03978
+249,Hulk,Hulk,2017,Left Arm,Nine Realms Warriors,nueva,True,250,Tienda_Retro,Barranco,-12.13873,-77.0182
+250,Hulk,Hulk,2019,Left Leg,Shuri,nueva,True,65,Tienda_Retro,San Miguel,-12.07541,-77.08378
+251,Hulk,Hulk,2019,Left Leg,Shuri,nueva,True,55,Tienda_Titan,Los Olivos,-11.96733,-77.07227
+252,Hulk,Hulk,2017,Left Leg,Thor,abierta,True,230,Tienda_Vault,Miraflores,-12.11945,-77.02932
+253,Hulk,Hulk,2019,Right Arm,Union Jack,nueva,True,155,Tienda_Vault,San Isidro,-12.09997,-77.03992
+254,Hulk,Hulk,2017,Right Arm,Hela,abierta,True,195,Tienda_Retro,San Isidro,-12.09863,-77.03707
+255,Hulk,Hulk,2019,Right Leg,Loki,nueva,True,100,Tienda_Legend,Callao,-12.05885,-77.11638
+256,Hulk,Hulk,2017,Right Leg,Loki,nueva,False,85,Tienda_Kaiju,San Miguel,-12.08074,-77.09027
+257,Hulk,Hulk,2019,Torso,Rescue,nueva,False,40,Tienda_Mecha,Surco,-12.14397,-76.99057
+258,Hulkbuster,Hulkbuster,2015,Head,War Machine,abierta,True,120,Tienda_Kaiju,San Isidro,-12.0949,-77.03765
+259,Hulkbuster,Hulkbuster,2015,Left Arm,Fearless Defenders,nueva,True,105,Tienda_Retro,Barranco,-12.1396,-77.02405
+260,Hulkbuster,Hulkbuster,2015,Right Arm,Fearless Defenders,nueva,True,115,Tienda_Hobby,Miraflores,-12.11808,-77.0335
+261,Hulkbuster,Hulkbuster,2015,Torso,Marvel Heroes,nueva,True,130,Tienda_Shelf,Miraflores,-12.11859,-77.03255
+262,Hydra Stomper,Hydra Stomper,2023,Head,Agatha Harkness,nueva,True,70,Tienda_Kaiju,La Molina,-12.0831,-76.90749
+263,Hydra Stomper,Hydra Stomper,2023,Left arm,Warrior Gamora,abierta,True,30,Tienda_Hobby,Los Olivos,-11.96658,-77.06675
+264,Hydra Stomper,Hydra Stomper,2023,Left leg,Nick Fury,nueva,True,65,Tienda_Legend,Miraflores,-12.11925,-77.0326
+265,Hydra Stomper,Hydra Stomper,2023,Left leg,Nick Fury,abierta,True,90,Tienda_Vault,Magdalena,-12.0872,-77.07044
+266,Hydra Stomper,Hydra Stomper,2023,Right arm,Goliath,nueva,True,90,Tienda_Kaiju,Jesus Maria,-12.06874,-77.05491
+267,Hydra Stomper,Hydra Stomper,2023,Right leg,Talos,nueva,False,60,Tienda_Legend,Magdalena,-12.08737,-77.07325
+268,Hydra Stomper,Hydra Stomper,2023,Right leg,Talos,nueva,True,70,Tienda_Legend,La Molina,-12.08421,-76.90682
+269,Hydra Stomper,Hydra Stomper,2023,Torso,Yelena Belova,nueva,True,65,Tienda_Akiba,San Miguel,-12.07667,-77.08766
+270,Hydra Stomper,Hydra Stomper,2023,Torso,Yelena Belova,nueva,True,75,Tienda_Hobby,Jesus Maria,-12.06958,-77.0498
+271,Infinity Ultron,Infinity Ultron,2022,Left arm,Hawkeye,nueva,True,230,Tienda_Titan,Magdalena,-12.08826,-77.07225
+272,Infinity Ultron,Infinity Ultron,2022,Right arm,Mister Knight,nueva,True,155,Tienda_Shelf,Los Olivos,-11.97095,-77.06976
+273,Infinity Ultron,Infinity Ultron,2022,Right leg,Kate Bishop,nueva,True,100,Tienda_Retro,Lima Centro,-12.05007,-77.04481
+274,Iron Monger,Iron Monger,2013,Head,Ultron,abierta,True,150,Tienda_Vault,San Isidro,-12.1005,-77.03794
+275,Iron Monger,Iron Monger,2013,Left Arm,Lieutenant Colonel James Rhodes,nueva,True,170,Tienda_Legend,Surco,-12.1413,-76.99278
+276,Iron Monger,Iron Monger,2013,Left Leg,Heroic Age Iron Man,abierta,True,140,Tienda_Nexus,San Isidro,-12.0954,-77.03527
+277,Iron Monger,Iron Monger,2013,Right Arm,Iron Man Mark 42,nueva,True,220,Tienda_Akiba,Barranco,-12.13939,-77.02258
+278,Iron Monger,Iron Monger,2013,Right Leg,Classic Iron Man,nueva,True,155,Tienda_Akiba,Surco,-12.14275,-76.99039
+279,Iron Monger,Iron Monger,2013,Torso,Iron Patriot,nueva,True,160,Tienda_Hobby,Barranco,-12.14285,-77.02408
+280,Joe Fixit,Joe Fixit,2020,Left Arm,Captain America,nueva,True,85,Tienda_Akiba,La Molina,-12.08342,-76.90947
+281,Joe Fixit,Joe Fixit,2020,Left leg,Falcon,nueva,True,90,Tienda_Shelf,Lima Centro,-12.04744,-77.04076
+282,Joe Fixit,Joe Fixit,2020,Right Arm,Iron Man,abierta,True,110,Tienda_Mecha,Los Olivos,-11.96787,-77.07297
+283,Jubilee,Jubilee,2014,Body,Storm,nueva,True,555,Tienda_Hobby,San Isidro,-12.09764,-77.03262
+284,Jubilee,Jubilee,2014,Head,Stryfe,nueva,False,50,Tienda_Nexus,Lima Centro,-12.04736,-77.04494
+285,Jubilee,Jubilee,2014,Head,Stryfe,nueva,True,65,Tienda_Vault,San Miguel,-12.07644,-77.08924
+286,Jubilee,Jubilee,2014,Left Arm,Magneto,nueva,True,300,Tienda_Nexus,Magdalena,-12.08764,-77.07018
+287,Jubilee,Jubilee,2014,Left Arm,Magneto,nueva,True,335,Tienda_Kaiju,Magdalena,-12.09001,-77.0725
+288,Jubilee,Jubilee,2014,Right Arm,Cyclops,nueva,True,250,Tienda_Retro,Lima Centro,-12.04594,-77.04317
+289,Juggernaut,Juggernaut,2016,Left Leg,Rogue,nueva,False,140,Tienda_Shelf,Magdalena,-12.09256,-77.07372
+290,Juggernaut,Juggernaut,2016,Right Arm,Kitty Pryde,nueva,True,215,Tienda_Mecha,Barranco,-12.1438,-77.02238
+291,Juggernaut,Juggernaut,2016,Right Arm,Kitty Pryde,nueva,False,130,Tienda_Kaiju,Surco,-12.14525,-76.99087
+292,Juggernaut,Juggernaut,2016,Torso,Phoenix,abierta,False,85,Tienda_Legend,Lima Centro,-12.04599,-77.04613
+293,Juggernaut,Juggernaut,2016,Waist,Cable,nueva,True,170,Tienda_Akiba,Miraflores,-12.11764,-77.02588
+294,Kingpin,Kingpin,2018,Head,Symbiote Spider-Man,abierta,True,160,Tienda_Kaiju,Surco,-12.14484,-76.99282
+295,Kingpin,Kingpin,2018,Left Leg,Night Thrasher,nueva,True,235,Tienda_Titan,San Isidro,-12.0981,-77.03907
+296,Kingpin,Kingpin,2018,Left Leg,Night Thrasher,abierta,True,225,Tienda_Legend,Surco,-12.14151,-76.99661
+297,Kingpin,Kingpin,2018,Right Arm,Black Cat,nueva,True,110,Tienda_Titan,La Molina,-12.08394,-76.90926
+298,Kingpin,Kingpin,2018,Right Leg,Red Goblin,nueva,False,105,Tienda_Kaiju,San Isidro,-12.10156,-77.03374
+299,Kingpin,Kingpin,2018,Torso,Puma,abierta,False,65,Tienda_Shelf,San Juan de Lurigancho,-11.97856,-77.01184
+300,Konshu,Konshu,2022,Head,He-Who-Remains,abierta,True,80,Tienda_Kaiju,Magdalena,-12.08634,-77.06878
+301,Konshu,Konshu,2022,Left arm,Agent Jimmy Woo,nueva,False,45,Tienda_Retro,San Isidro,-12.09389,-77.03855
+302,Konshu,Konshu,2022,Left arm,Agent Jimmy Woo,abierta,True,65,Tienda_Akiba,Miraflores,-12.1178,-77.03302
+303,Konshu,Konshu,2022,Right arm,Red Skull,nueva,True,130,Tienda_Shelf,San Juan de Lurigancho,-11.98039,-77.01064
+304,Konshu,Konshu,2022,Right leg,Zombie Scarlet Witch,nueva,True,60,Tienda_Hobby,La Molina,-12.08834,-76.90712
+305,Konshu,Konshu,2022,Right leg,Zombie Scarlet Witch,abierta,True,70,Tienda_Shelf,Jesus Maria,-12.07379,-77.05018
+306,Konshu,Konshu,2022,Torso,Howard The Duck,abierta,True,65,Tienda_Legend,Miraflores,-12.12417,-77.03012
+307,Korg,Korg,2022,Head,King Valkyrie,nueva,True,80,Tienda_Nexus,San Juan de Lurigancho,-11.97444,-77.00767
+308,Korg,Korg,2022,Left Arm,Ravager Thor,nueva,True,80,Tienda_Kaiju,San Juan de Lurigancho,-11.97769,-77.00755
+309,Korg,Korg,2022,Left Leg,Mighty Thor,nueva,True,80,Tienda_Mecha,Barranco,-12.14265,-77.02448
+310,Korg,Korg,2022,Right Arm,Star-Lord,nueva,True,75,Tienda_Legend,Barranco,-12.14241,-77.01895
+311,Korg,Korg,2022,Right Arm,Star-Lord,nueva,True,90,Tienda_Nexus,Lima Centro,-12.04966,-77.04405
+312,Korg,Korg,2022,Right Leg,Gorr,nueva,True,50,Tienda_Akiba,Miraflores,-12.12453,-77.02809
+313,Korg,Korg,2022,Torso,Groot,nueva,False,105,Tienda_Hobby,Callao,-12.05451,-77.11942
+314,Kree Sentry,Kree Sentry,2019,Left Arm,Captain Marvel,nueva,True,35,Tienda_Nexus,Los Olivos,-11.96842,-77.07226
+315,Kree Sentry,Kree Sentry,2019,Left Leg,Talos,abierta,True,65,Tienda_Retro,Surco,-12.14185,-76.99493
+316,Kree Sentry,Kree Sentry,2019,Right Leg,Genis-Vell,abierta,True,60,Tienda_Hobby,San Isidro,-12.09659,-77.03436
+317,Kree Sentry,Kree Sentry,2019,Right Leg,Genis-Vell,nueva,True,65,Tienda_Akiba,Jesus Maria,-12.07263,-77.05192
+318,Kree Sentry,Kree Sentry,2019,Torso,Yon-Rogg,abierta,True,45,Tienda_Hobby,Magdalena,-12.08618,-77.07467
+319,Kree Sentry,Kree Sentry,2019,Torso,Yon-Rogg,nueva,True,45,Tienda_Hobby,San Isidro,-12.09467,-77.03832
+320,Lizard,Lizard,2018,Head,Lasher,nueva,True,420,Tienda_Vault,San Isidro,-12.10161,-77.03853
+321,Lizard,Lizard,2018,Head,Lasher,abierta,True,455,Tienda_Kaiju,Jesus Maria,-12.07147,-77.05083
+322,Lizard,Lizard,2018,Left Arm,Spider-Punk,nueva,True,270,Tienda_Titan,San Isidro,-12.09673,-77.03898
+323,Lizard,Lizard,2018,Left Leg,Prowler,nueva,False,130,Tienda_Nexus,Callao,-12.05964,-77.11607
+324,Lizard,Lizard,2018,Right Arm,Spider-Man Noir,abierta,True,240,Tienda_Legend,Miraflores,-12.12336,-77.02771
+325,Lizard,Lizard,2018,Right Arm,Spider-Man Noir,nueva,True,185,Tienda_Vault,Barranco,-12.13935,-77.02054
+326,Lizard,Lizard,2018,Right Leg,Mysterio,nueva,False,130,Tienda_Titan,San Isidro,-12.0991,-77.03351
+327,Lizard,Lizard,2018,Right Leg,Mysterio,nueva,True,200,Tienda_Akiba,San Miguel,-12.07701,-77.08854
+328,Lizard,Lizard,2018,Tail,The Unbelievable Gwenpool,nueva,True,135,Tienda_Kaiju,Jesus Maria,-12.06818,-77.05123
+329,M'Baku,M Baku,2018,Left Leg,Dora Milaje,nueva,True,65,Tienda_Akiba,Surco,-12.14244,-76.99438
+330,M'Baku,M Baku,2018,Left Leg,Dora Milaje,abierta,True,65,Tienda_Legend,Los Olivos,-11.96781,-77.07187
+331,M.O.D.O.K.,M.O.D.O.K.,2006,Head,Spider-Woman,nueva,True,130,Tienda_Mecha,Barranco,-12.14136,-77.02208
+332,M.O.D.O.K.,M.O.D.O.K.,2006,Left Arm,Thorbuster Iron Man,nueva,True,80,Tienda_Shelf,Los Olivos,-11.96841,-77.07306
+333,M.O.D.O.K.,M.O.D.O.K.,2006,Legs,Wasp,nueva,True,70,Tienda_Hobby,Miraflores,-12.12137,-77.03336
+334,M.O.D.O.K.,M.O.D.O.K.,2006,Legs,Wasp,abierta,True,65,Tienda_Akiba,Miraflores,-12.12304,-77.02621
+335,M.O.D.O.K.,M.O.D.O.K.,2006,Propulsor,Beta Ray Bill,nueva,True,175,Tienda_Titan,San Isidro,-12.09966,-77.03578
+336,M.O.D.O.K.,M.O.D.O.K.,2006,Right Arm,Moon Knight,abierta,False,105,Tienda_Retro,San Juan de Lurigancho,-11.97538,-77.00842
+337,M.O.D.O.K.,M.O.D.O.K.,2006,Seat,Captain Marvel,abierta,True,70,Tienda_Vault,Miraflores,-12.11981,-77.02595
+338,Man-Thing,Man-Thing,2017,Head,Daredevil,abierta,True,210,Tienda_Vault,Magdalena,-12.08684,-77.0697
+339,Man-Thing,Man-Thing,2017,Head,Daredevil,abierta,True,250,Tienda_Shelf,Los Olivos,-11.96669,-77.07082
+340,Man-Thing,Man-Thing,2017,Left Arm,Punisher,nueva,True,260,Tienda_Hobby,La Molina,-12.0828,-76.90699
+341,Man-Thing,Man-Thing,2017,Left Leg,Blade,nueva,True,195,Tienda_Vault,San Miguel,-12.08003,-77.08917
+342,Man-Thing,Man-Thing,2017,Right Arm,Bullseye,abierta,True,405,Tienda_Akiba,San Isidro,-12.09572,-77.03902
+343,Man-Thing,Man-Thing,2017,Right Leg,Elektra,abierta,True,230,Tienda_Vault,Los Olivos,-11.97237,-77.06937
+344,Man-Thing,Man-Thing,2017,Torso,Jessica Jones,nueva,True,215,Tienda_Legend,Miraflores,-12.11908,-77.03175
+345,Mandroid,Mandroid,2014,Head,Marvel Now! Captain America,nueva,True,135,Tienda_Mecha,Barranco,-12.14377,-77.01979
+346,Mandroid,Mandroid,2014,Head,Marvel Now! Captain America,nueva,True,190,Tienda_Kaiju,La Molina,-12.08382,-76.90779
+347,Mandroid,Mandroid,2014,Left Arm,Agents Of Hydra,nueva,True,125,Tienda_Retro,La Molina,-12.08866,-76.90719
+348,Mandroid,Mandroid,2014,Left Arm,Agents Of Hydra,nueva,True,95,Tienda_Vault,La Molina,-12.08488,-76.91204
+349,Mandroid,Mandroid,2014,Right Leg,Captain America,abierta,True,165,Tienda_Legend,Lima Centro,-12.047,-77.04198
+350,Mandroid,Mandroid,2014,Torso,Black Widow,nueva,False,80,Tienda_Nexus,Callao,-12.05806,-77.11536
+351,Mantis,Mantis,2017,Head,Cosmic Protectors,nueva,True,120,Tienda_Retro,Barranco,-12.1396,-77.02273
+352,Mantis,Mantis,2017,Left Arm,Cosmic Protectors,nueva,True,160,Tienda_Mecha,San Juan de Lurigancho,-11.97601,-77.00809
+353,Mantis,Mantis,2017,Left Leg,Daughters Of Thanos,abierta,True,170,Tienda_Titan,San Juan de Lurigancho,-11.97889,-77.01114
+354,Mantis,Mantis,2017,Left Leg,Daughters Of Thanos,nueva,False,135,Tienda_Retro,Jesus Maria,-12.06713,-77.05412
+355,Mindless One,Marvel Knights,2023,Head,Blade,nueva,False,185,Tienda_Titan,Surco,-12.14793,-76.99389
+356,Mindless One,Marvel Knights,2023,Left Arm,The Fist Ninja,abierta,True,135,Tienda_Legend,Callao,-12.0535,-77.11671
+357,Mindless One,Marvel Knights,2023,Right Arm,Clea,nueva,True,450,Tienda_Kaiju,Magdalena,-12.0881,-77.0707
+358,Mojo,Mojo,2006,Back,Psylocke,nueva,True,115,Tienda_Vault,Barranco,-12.13884,-77.02127
+359,Mojo,Mojo,2006,Back,Psylocke,nueva,True,115,Tienda_Legend,San Miguel,-12.07387,-77.08546
+360,Mojo,Mojo,2006,Left legs,Luke Cage,abierta,True,90,Tienda_Retro,Barranco,-12.13841,-77.02257
+361,Mojo,Mojo,2006,Right Legs,Longshot,nueva,True,70,Tienda_Hobby,San Isidro,-12.10124,-77.03422
+362,Mojo,Mojo,2006,Right Legs,Longshot,abierta,False,35,Tienda_Kaiju,La Molina,-12.08825,-76.90754
+363,Mojo,Mojo,2006,Stomach,Falcon,nueva,True,110,Tienda_Titan,San Miguel,-12.07586,-77.08387
+364,Mojo,Mojo,2006,Tentacle,Iron Man (1St Appearance),abierta,True,105,Tienda_Vault,Callao,-12.05611,-77.11929
+365,Mojo,Mojo,2006,Tentacle,Iron Man (1St Appearance),nueva,True,95,Tienda_Akiba,Los Olivos,-11.96847,-77.07176
+366,Mojo,Mojo,2006,Upper body,Baron Zemo,nueva,True,50,Tienda_Retro,Magdalena,-12.09117,-77.07292
+367,Molten Man,Molten Man,2019,Head,Hydro-Man,nueva,True,160,Tienda_Legend,Lima Centro,-12.04471,-77.04521
+368,Molten Man,Molten Man,2019,Left Arm,Spider-Man,nueva,True,145,Tienda_Kaiju,Barranco,-12.14033,-77.02285
+369,Molten Man,Molten Man,2019,Left Leg,Mysterio,nueva,False,190,Tienda_Mecha,San Isidro,-12.10004,-77.0386
+370,Molten Man,Molten Man,2019,Right Arm,Doppelganger Spider-Man,nueva,True,165,Tienda_Shelf,San Juan de Lurigancho,-11.97763,-77.00465
+371,Molten Man,Molten Man,2019,Right Arm,Doppelganger Spider-Man,abierta,True,165,Tienda_Titan,Miraflores,-12.1194,-77.02614
+372,Molten Man,Molten Man,2019,Right Leg,Scorpion,nueva,True,255,Tienda_Kaiju,Jesus Maria,-12.06738,-77.05042
+373,Mr. Hyde,Mr. Hyde,2021,Left Arm,Death Dealer,nueva,False,35,Tienda_Vault,Lima Centro,-12.04447,-77.04196
+374,Mr. Hyde,Mr. Hyde,2021,Left Leg,Tony Stark (A.i.),abierta,True,70,Tienda_Akiba,San Juan de Lurigancho,-11.97678,-77.00968
+375,Mr. Hyde,Mr. Hyde,2021,Right Arm,Wenwu,abierta,False,25,Tienda_Mecha,Jesus Maria,-12.06938,-77.05006
+376,Mr. Hyde,Mr. Hyde,2021,Right Leg,Shang-Chi,abierta,True,80,Tienda_Nexus,La Molina,-12.0894,-76.90748
+377,Mr. Hyde,Mr. Hyde,2021,Torso,Xialing,nueva,True,100,Tienda_Kaiju,San Miguel,-12.07366,-77.08619
+378,Nemesis,Nemesis,2009,Cannon,Punisher,nueva,True,320,Tienda_Akiba,Miraflores,-12.11764,-77.03265
+379,Nemesis,Nemesis,2025,Helmet & Backpack,Nightcrawler,abierta,False,145,Tienda_Mecha,Miraflores,-12.11936,-77.03026
+380,Nemesis,Nemesis,2025,Left Arm,Marrow,abierta,True,145,Tienda_Legend,San Juan de Lurigancho,-11.97541,-77.00556
+381,Nemesis,Nemesis,2025,Left Leg,Fabian Cortez,nueva,False,75,Tienda_Retro,Miraflores,-12.12437,-77.02657
+382,Nemesis,Nemesis,2009,Left Leg,Black Bolt,nueva,True,170,Tienda_Akiba,San Miguel,-12.08044,-77.08475
+383,Nemesis,Nemesis,2009,Left Leg,Black Bolt,nueva,True,155,Tienda_Mecha,Barranco,-12.14152,-77.01921
+384,Nemesis,Nemesis,2025,Right Arm,Cyclops,nueva,True,125,Tienda_Kaiju,Lima Centro,-12.0492,-77.03974
+385,Nemesis,Nemesis,2025,Right Arm,Cyclops,nueva,False,90,Tienda_Vault,Los Olivos,-11.97192,-77.07012
+386,Nemesis,Nemesis,2009,Right Arm,Beast,nueva,True,430,Tienda_Akiba,Miraflores,-12.12494,-77.03367
+387,Nemesis,Nemesis,2025,Right Leg,Gambit,nueva,False,60,Tienda_Nexus,Los Olivos,-11.96861,-77.06828
+388,Nemesis,Nemesis,2009,Right Leg,Nova,nueva,False,110,Tienda_Akiba,Miraflores,-12.11798,-77.02807
+389,Nemesis,Nemesis,2025,Torso,Husk,abierta,True,155,Tienda_Nexus,San Isidro,-12.09851,-77.0363
+390,Nemesis,Nemesis,2025,Torso,Husk,abierta,True,160,Tienda_Legend,Lima Centro,-12.04396,-77.0422
+391,Nemesis,Nemesis,2009,Upper Torso,Tigra,nueva,True,300,Tienda_Legend,San Miguel,-12.07552,-77.08805
+392,Okoye,Okoye,2018,Arms,Sub-Mariner,nueva,True,215,Tienda_Hobby,Los Olivos,-11.96633,-77.07383
+393,Okoye,Okoye,2018,Head,Black Panther,abierta,True,120,Tienda_Vault,San Juan de Lurigancho,-11.97445,-77.0073
+394,Okoye,Okoye,2018,Right Leg,Mavels Black Bolt,nueva,False,50,Tienda_Hobby,Jesus Maria,-12.06684,-77.05183
+395,Okoye,Okoye,2018,Torso,Nakia,nueva,True,55,Tienda_Mecha,Magdalena,-12.0918,-77.07056
+396,Onslaught,Onslaught,2006,Left arm,Abomination,abierta,False,90,Tienda_Nexus,Lima Centro,-12.04912,-77.04266
+397,Onslaught,Onslaught,2006,Left leg,Blackheart,nueva,False,150,Tienda_Mecha,La Molina,-12.08775,-76.90783
+398,Onslaught,Onslaught,2006,Right arm,Loki,nueva,True,100,Tienda_Legend,Magdalena,-12.08905,-77.06836
+399,Onslaught,Onslaught,2006,Right leg,Green Goblin,abierta,True,190,Tienda_Shelf,San Isidro,-12.09832,-77.03456
+400,Onslaught,Onslaught,2006,Right leg,Green Goblin,abierta,True,245,Tienda_Shelf,San Miguel,-12.07951,-77.08454
+401,Puck,Puck,2013,Arms,Cyclops,abierta,True,160,Tienda_Legend,Surco,-12.14348,-76.99124
+402,Puff Adder,Puff Adder,2023,Head,Ultimate Captain America,abierta,True,100,Tienda_Hobby,Lima Centro,-12.04462,-77.04656
+403,Puff Adder,Puff Adder,2023,Head,Ultimate Captain America,nueva,True,80,Tienda_Legend,Jesus Maria,-12.06866,-77.04936
+404,Puff Adder,Puff Adder,2023,Right arm,Orb,abierta,False,40,Tienda_Vault,Los Olivos,-11.96737,-77.06853
+405,Puff Adder,Puff Adder,2023,Right leg,Baron Von Strucker,nueva,True,55,Tienda_Shelf,San Isidro,-12.09682,-77.03949
+406,Puff Adder,Puff Adder,2023,Torso,Yelena Belova,nueva,True,90,Tienda_Retro,Los Olivos,-11.9719,-77.07159
+407,Queen Brood,Queen Brood,2007,Front left,Hydra Agent,nueva,True,105,Tienda_Nexus,San Miguel,-12.0771,-77.08799
+408,Queen Brood,Queen Brood,2007,Front left,Hydra Agent,nueva,True,105,Tienda_Titan,La Molina,-12.08788,-76.91321
+409,Queen Brood,Queen Brood,2007,Head,Cyclops,nueva,True,110,Tienda_Nexus,Los Olivos,-11.97064,-77.07027
+410,Queen Brood,Queen Brood,2007,Left leg,Captain America,abierta,False,85,Tienda_Titan,Lima Centro,-12.04379,-77.0409
+411,Queen Brood,Queen Brood,2007,Right front,X3 Colossus,abierta,True,120,Tienda_Legend,San Isidro,-12.09952,-77.04003
+412,Queen Brood,Queen Brood,2007,Tail,Bucky,nueva,True,170,Tienda_Hobby,San Juan de Lurigancho,-11.98,-77.00424
+413,Queen Brood,Queen Brood,2007,Torso,Marvel Girl,nueva,False,125,Tienda_Titan,Surco,-12.14291,-76.9952
+414,Queen Brood,Queen Brood,2007,Torso,Marvel Girl,abierta,True,200,Tienda_Titan,Barranco,-12.14295,-77.02042
+415,Queen Brood,Queen Brood,2007,Wings,Danger,abierta,True,345,Tienda_Kaiju,Surco,-12.14561,-76.99303
+416,Red Hulk,Red Hulk,2008,Head,Spiral,nueva,True,150,Tienda_Legend,Miraflores,-12.12179,-77.02855
+417,Red Hulk,Red Hulk,2008,Left Arm,Black Costume Spider-Man,abierta,True,225,Tienda_Titan,Los Olivos,-11.97211,-77.06783
+418,Red Hulk,Red Hulk,2008,Torso,Union Jack,nueva,True,150,Tienda_Hobby,San Isidro,-12.09438,-77.03891
+419,Red Hulk,Red Hulk,2008,Torso,Union Jack,nueva,True,105,Tienda_Nexus,San Miguel,-12.07481,-77.09064
+420,Red Onslaught,Red Onslaught,2016,Right Arm,Forces Of Evil,nueva,True,80,Tienda_Akiba,Barranco,-12.14131,-77.02036
+421,Red Onslaught,Red Onslaught,2016,Right Arm,Forces Of Evil,nueva,True,105,Tienda_Retro,Miraflores,-12.12083,-77.02599
+422,Red Onslaught,Red Onslaught,2016,Right leg,Agents Of Shield,nueva,True,30,Tienda_Akiba,Jesus Maria,-12.0716,-77.04997
+423,Red Onslaught,Red Onslaught,2016,Torso,Agents Of Shield,abierta,True,85,Tienda_Retro,Miraflores,-12.12294,-77.03007
+424,Red Onslaught,Red Onslaught,2016,Torso,Agents Of Shield,nueva,True,60,Tienda_Titan,San Juan de Lurigancho,-11.97902,-77.00647
+425,Rhino,Rhino,2015,Head,Scarlet Spider,nueva,True,165,Tienda_Hobby,San Miguel,-12.07612,-77.088
+426,Rhino,Rhino,2015,Left Arm,Savage Force,nueva,True,145,Tienda_Retro,Callao,-12.05859,-77.118
+427,Rhino,Rhino,2015,Left Arm,Savage Force,nueva,False,140,Tienda_Titan,San Isidro,-12.09963,-77.03497
+428,Rhino,Rhino,2015,Left leg,Savage Force,nueva,True,280,Tienda_Nexus,Lima Centro,-12.04502,-77.04294
+429,Rhino,Rhino,2015,Right Arm,Superior Venom,abierta,True,200,Tienda_Hobby,Miraflores,-12.1192,-77.02744
+430,Rhino,Rhino,2015,Right Arm,Superior Venom,nueva,False,150,Tienda_Akiba,Magdalena,-12.09149,-77.07264
+431,Rhino,Rhino,2015,Right leg,Heroes For Hire,nueva,True,200,Tienda_Nexus,Lima Centro,-12.0466,-77.04144
+432,Rhino,Rhino,2015,Torso,Heroes For Hire,abierta,True,105,Tienda_Vault,San Miguel,-12.07813,-77.08965
+433,Rintrah,Rintrah,2022,Left Arm,Wong,nueva,True,70,Tienda_Retro,Miraflores,-12.12003,-77.03366
+434,Rintrah,Rintrah,2022,Left Leg,Sleepwalker,nueva,True,60,Tienda_Mecha,San Juan de Lurigancho,-11.97327,-77.00802
+435,Rintrah,Rintrah,2022,Left Leg,Sleepwalker,nueva,True,70,Tienda_Mecha,Lima Centro,-12.04446,-77.04207
+436,Rintrah,Rintrah,2022,Right Arm,Master Mordo,nueva,True,50,Tienda_Shelf,La Molina,-12.0853,-76.90856
+437,Rintrah,Rintrah,2022,Right Leg,Dspayre,nueva,True,55,Tienda_Shelf,Callao,-12.05236,-77.11454
+438,Rintrah,Rintrah,2022,Right Leg,Dspayre,abierta,True,45,Tienda_Legend,Los Olivos,-11.97151,-77.07074
+439,Rintrah,Rintrah,2022,Torso,America Chavez,nueva,True,35,Tienda_Titan,San Miguel,-12.07364,-77.0896
+440,Rocket Raccoon,Rocket Raccoon,2013,Arms,Black Panther,nueva,True,135,Tienda_Retro,La Molina,-12.08923,-76.90789
+441,Rocket Raccoon,Rocket Raccoon,2013,Body,Jean Grey,nueva,True,130,Tienda_Mecha,La Molina,-12.08997,-76.91292
+442,Rocket Raccoon,Rocket Raccoon,2013,Body,Jean Grey,nueva,True,105,Tienda_Retro,Magdalena,-12.08748,-77.0687
+443,Rocket Raccoon,Rocket Raccoon,2013,Head,Wrecking Crew,nueva,False,450,Tienda_Akiba,La Molina,-12.08814,-76.9091
+444,Rocket Raccoon,Rocket Raccoon,2013,Head,Wrecking Crew,nueva,True,560,Tienda_Hobby,Lima Centro,-12.04243,-77.04237
+445,Ronan,Ronan,2007,Head,Thing,nueva,True,170,Tienda_Mecha,La Molina,-12.0857,-76.91097
+446,Ronan,Ronan,2007,Left Leg,Human Torch,nueva,True,75,Tienda_Legend,Los Olivos,-11.96991,-77.07278
+447,Ronan,Ronan,2007,Left Leg,Human Torch,nueva,True,70,Tienda_Titan,Lima Centro,-12.04354,-77.04317
+448,Ronan,Ronan,2007,Right arm,Namor,nueva,True,155,Tienda_Kaiju,Jesus Maria,-12.07044,-77.05339
+449,Ronan,Ronan,2007,Right leg,Silver Surfer,nueva,False,95,Tienda_Legend,San Miguel,-12.08063,-77.08421
+450,SP//dr,SP//dr,2018,Head,Cloak,nueva,True,240,Tienda_Vault,Magdalena,-12.08673,-77.06894
+451,SP//dr,SP//dr,2018,Head,Cloak,abierta,True,290,Tienda_Retro,La Molina,-12.08303,-76.91097
+452,SP//dr,SP//dr,2018,Left Arm,Scarlet Spider,nueva,True,400,Tienda_Nexus,Los Olivos,-11.97055,-77.06935
+453,SP//dr,SP//dr,2018,Right Arm,Daredevil,nueva,True,165,Tienda_Titan,Lima Centro,-12.04827,-77.04313
+454,SP//dr,SP//dr,2018,Right Leg,House Of M Spider-Man,nueva,True,155,Tienda_Nexus,Los Olivos,-11.97126,-77.07377
+455,SP//dr,SP//dr,2018,Right Leg,House Of M Spider-Man,nueva,True,175,Tienda_Nexus,Lima Centro,-12.04263,-77.04436
+456,Sandman,Sandman,2017,Head,Green Goblin,abierta,True,135,Tienda_Akiba,Miraflores,-12.1204,-77.02907
+457,Sandman,Sandman,2017,Head,Green Goblin,nueva,True,165,Tienda_Akiba,Surco,-12.14323,-76.99227
+458,Sandman,Sandman,2007,Left Leg,Black Suited Spider-Man,nueva,False,190,Tienda_Nexus,San Isidro,-12.10105,-77.03279
+459,Sandman,Sandman,2007,Left arm,Venom,abierta,True,205,Tienda_Titan,Magdalena,-12.09231,-77.07082
+460,Sandman,Sandman,2017,Left leg,Jackal,abierta,False,125,Tienda_Mecha,Barranco,-12.13718,-77.01774
+461,Sandman,Sandman,2017,Right Arm,Multiverse Spider-Men,abierta,False,160,Tienda_Kaiju,Barranco,-12.14348,-77.02417
+462,Sandman,Sandman,2007,Right Leg,Green Goblin,abierta,True,380,Tienda_Hobby,Miraflores,-12.11949,-77.03189
+463,Sandman,Sandman,2007,Right arm,Doc Ock,nueva,True,445,Tienda_Kaiju,Miraflores,-12.11718,-77.02938
+464,Sandman,Sandman,2007,Right arm,Doc Ock,nueva,False,350,Tienda_Hobby,San Juan de Lurigancho,-11.97436,-77.00719
+465,Sandman,Sandman,2007,Right base,Spider-Man,nueva,True,135,Tienda_Nexus,Callao,-12.05987,-77.11905
+466,Sandman,Sandman,2017,Torso,Ms. Marvel,nueva,False,85,Tienda_Shelf,San Miguel,-12.07404,-77.08319
+467,Sandman,Sandman,2007,Torso,Mary Jane,nueva,True,155,Tienda_Retro,Lima Centro,-12.05018,-77.04079
+468,Sandman,Sandman,2007,Torso,Mary Jane,abierta,True,195,Tienda_Hobby,Lima Centro,-12.04627,-77.04303
+469,Sandman,Sandman,2017,Weapon,Spider-Man,abierta,True,115,Tienda_Akiba,Jesus Maria,-12.0708,-77.05281
+470,Sandman,Sandman,2017,Weapon,Spider-Man,nueva,False,90,Tienda_Retro,Miraflores,-12.12281,-77.03079
+471,Sasquatch,Sasquatch,2018,Left Arm,Deathlok,nueva,False,115,Tienda_Kaiju,Lima Centro,-12.04271,-77.04055
+472,Sasquatch,Sasquatch,2018,Left Leg,Cable,nueva,True,275,Tienda_Legend,Lima Centro,-12.04385,-77.04492
+473,Sasquatch,Sasquatch,2018,Right Arm,Domino,nueva,True,120,Tienda_Kaiju,San Juan de Lurigancho,-11.97566,-77.00477
+474,Sasquatch,Sasquatch,2018,Right Arm,Domino,nueva,True,140,Tienda_Mecha,San Miguel,-12.07768,-77.08697
+475,Sasquatch,Sasquatch,2018,Right Leg,Paladin,nueva,True,95,Tienda_Vault,San Miguel,-12.07733,-77.0849
+476,Sauron,Sauron,2018,Left Leg,Omega Red,abierta,True,195,Tienda_Nexus,Lima Centro,-12.04873,-77.04323
+477,Sauron,Sauron,2018,Left Wing,Wolverine,nueva,True,300,Tienda_Retro,Barranco,-12.1414,-77.02148
+478,Sauron,Sauron,2018,Left Wing,Wolverine,nueva,True,310,Tienda_Kaiju,Los Olivos,-11.96644,-77.07288
+479,Sauron,Sauron,2018,Right Leg,Lady Deadpool,abierta,True,155,Tienda_Vault,San Juan de Lurigancho,-11.97311,-77.00684
+480,Sauron,Sauron,2018,Right Leg,Lady Deadpool,nueva,True,165,Tienda_Titan,San Isidro,-12.10098,-77.039
+481,Sauron,Sauron,2018,Tail,Deadpool,nueva,False,80,Tienda_Retro,Lima Centro,-12.04565,-77.04293
+482,Sauron,Sauron,2018,Tail,Deadpool,abierta,True,105,Tienda_Mecha,La Molina,-12.08616,-76.90861
+483,Sentinel,Sentinel,2005,Chest,Spider-Man,nueva,False,240,Tienda_Mecha,Barranco,-12.13654,-77.02448
+484,Sentinel,Sentinel,2005,Chest,Spider-Man,nueva,True,470,Tienda_Titan,Barranco,-12.14179,-77.01846
+485,Sentinel,Sentinel,2005,Left Arm,Cyclops,abierta,True,175,Tienda_Vault,La Molina,-12.08811,-76.91306
+486,Sentinel,Sentinel,2005,Left Leg,Angel,nueva,True,300,Tienda_Titan,Miraflores,-12.12196,-77.0273
+487,Sentinel,Sentinel,2005,Right Arm,Black Panther,nueva,False,185,Tienda_Akiba,San Miguel,-12.07727,-77.08763
+488,Sentinel,Sentinel,2005,Right Leg,Mister Sinister,abierta,True,210,Tienda_Vault,Jesus Maria,-12.0684,-77.05396
+489,Stature,Quantumania,2023,Head,Kang The Conqueror,nueva,True,80,Tienda_Nexus,Callao,-12.05378,-77.11988
+490,Stature,Quantumania,2023,Head,Kang The Conqueror,abierta,True,90,Tienda_Legend,Barranco,-12.14135,-77.01774
+491,Stature,Quantumania,2023,Left arm,Ultron,nueva,False,125,Tienda_Akiba,Miraflores,-12.12063,-77.03168
+492,Stature,Quantumania,2023,Left leg,Crossfire,abierta,True,60,Tienda_Titan,Barranco,-12.13861,-77.02231
+493,Stature,Quantumania,2023,Left leg,Crossfire,abierta,True,75,Tienda_Legend,Barranco,-12.13987,-77.0216
+494,Stature,Quantumania,2023,Right Leg,Wasp,nueva,True,80,Tienda_Vault,Lima Centro,-12.04348,-77.03944
+495,Stature,Quantumania,2023,Right Leg,Wasp,nueva,True,105,Tienda_Vault,Jesus Maria,-12.07276,-77.04906
+496,Stature,Quantumania,2023,Right arm,Future Ant-Man,nueva,True,55,Tienda_Akiba,Lima Centro,-12.04367,-77.04324
+497,Stature,Quantumania,2023,Torso,Egghead,nueva,True,45,Tienda_Legend,San Juan de Lurigancho,-11.97482,-77.00986
+498,Stilt-Man,Stilt-Man,2021,Armor,Miles Morales,nueva,False,150,Tienda_Titan,San Juan de Lurigancho,-11.97755,-77.00893
+499,Stilt-Man,Stilt-Man,2021,Head,Peter B. Parker,nueva,True,100,Tienda_Hobby,Miraflores,-12.1247,-77.03076
+500,Stilt-Man,Stilt-Man,2021,Left Arm,Frog-Man,nueva,True,80,Tienda_Nexus,San Miguel,-12.08065,-77.09081
+501,Stilt-Man,Stilt-Man,2021,Legs,The Hand Ninja,nueva,True,115,Tienda_Titan,Callao,-12.05304,-77.11406
+502,Stilt-Man,Stilt-Man,2021,Legs,The Hand Ninja,nueva,True,115,Tienda_Titan,Barranco,-12.14388,-77.02215
+503,Stilt-Man,Stilt-Man,2021,Right Arm,Prowler,abierta,True,230,Tienda_Shelf,San Isidro,-12.10127,-77.03948
+504,Stilt-Man,Stilt-Man,2021,Right Arm,Prowler,nueva,True,240,Tienda_Mecha,Lima Centro,-12.04405,-77.04623
+505,Stilt-Man,Stilt-Man,2021,Torso,Gwen Stacy,abierta,True,180,Tienda_Mecha,Magdalena,-12.08871,-77.07275
+506,Strong Guy,Strong Guy,2020,Left Arm,Maverick,nueva,True,110,Tienda_Kaiju,Barranco,-12.13925,-77.02413
+507,Strong Guy,Strong Guy,2020,Torso,Sunspot,nueva,True,120,Tienda_Kaiju,Callao,-12.05701,-77.12174
+508,Sugarman,Sugarman,2020,Arms,Sunfire,nueva,False,60,Tienda_Titan,San Isidro,-12.10027,-77.03577
+509,Sugarman,Sugarman,2020,Arms,Sunfire,nueva,True,105,Tienda_Nexus,Miraflores,-12.12476,-77.02806
+510,Sugarman,Sugarman,2020,Arms,X-Man,nueva,True,90,Tienda_Mecha,La Molina,-12.0866,-76.91302
+511,Sugarman,Sugarman,2020,Cape,Wild Child,abierta,True,65,Tienda_Legend,Callao,-12.05946,-77.11498
+512,Sugarman,Sugarman,2020,Hammer,Dark Beast,abierta,False,100,Tienda_Legend,San Juan de Lurigancho,-11.97544,-77.01123
+513,Sugarman,Sugarman,2020,Left Leg,Morph,nueva,True,90,Tienda_Akiba,Miraflores,-12.12377,-77.03213
+514,Sugarman,Sugarman,2020,Right Leg,Weapon X,nueva,False,65,Tienda_Titan,Callao,-12.05371,-77.11717
+515,Sugarman,Sugarman,2020,Torso,Jean Grey,nueva,True,75,Tienda_Akiba,Magdalena,-12.09079,-77.07316
+516,Sugarman,Sugarman,2020,Torso,Jean Grey,abierta,True,75,Tienda_Vault,San Isidro,-12.09412,-77.0401
+517,Super Skrull,Super Skrull,2019,Head,Thing,nueva,True,235,Tienda_Shelf,La Molina,-12.08815,-76.90604
+518,Super Skrull,Super Skrull,2019,Left Arm,Human Torch,abierta,False,120,Tienda_Shelf,Barranco,-12.1374,-77.0191
+519,Super Skrull,Super Skrull,2019,Left Leg,Doctor Doom,nueva,True,400,Tienda_Akiba,Callao,-12.05857,-77.11811
+520,Super Skrull,Super Skrull,2019,Right Arm,Hulk,nueva,True,170,Tienda_Akiba,San Juan de Lurigancho,-11.97731,-77.00988
+521,Super Skrull,Super Skrull,2019,Right Arm,Hulk,nueva,True,135,Tienda_Shelf,Magdalena,-12.08999,-77.07014
+522,Super Skrull,Super Skrull,2019,Right Leg,Mister Fantastic,nueva,True,150,Tienda_Shelf,San Isidro,-12.09484,-77.04019
+523,Super Skrull,Super Skrull,2019,Torso,Invisible Woman,nueva,True,95,Tienda_Nexus,San Miguel,-12.07821,-77.08565
+524,Terrax,Terrax,2012,Arms,Ghost Rider,nueva,True,175,Tienda_Legend,San Miguel,-12.07928,-77.08314
+525,Terrax,Terrax,2012,Head,Hope Summers,nueva,True,150,Tienda_Vault,Los Olivos,-11.96693,-77.07106
+526,Terrax,Terrax,2012,Left Leg,Klaw,nueva,True,120,Tienda_Hobby,Los Olivos,-11.96965,-77.06876
+527,Terrax,Terrax,2012,Right Leg,Iron Man,nueva,True,70,Tienda_Legend,La Molina,-12.08861,-76.91228
+528,Terrax,Terrax,2012,Right Leg,Iron Man,nueva,True,80,Tienda_Vault,San Isidro,-12.09941,-77.03656
+529,Terrax,Terrax,2012,Torso,Constrictor,nueva,True,185,Tienda_Kaiju,Los Olivos,-11.96952,-77.06813
+530,Terrax,Terrax,2012,Waist,Steve Rogers,nueva,True,70,Tienda_Akiba,San Isidro,-12.09685,-77.03261
+531,Thanos,Thanos,2019,Head,Hercules,nueva,True,220,Tienda_Akiba,San Isidro,-12.09993,-77.04027
+532,Thanos,Thanos,2018,Head,Captain America,nueva,False,70,Tienda_Shelf,Miraflores,-12.12171,-77.02988
+533,Thanos,Best of Marvel Legends: Avengers Endgame,2020,Left Arm,Iron Spider,nueva,False,125,Tienda_Akiba,Callao,-12.05212,-77.1146
+534,Thanos,Thanos,2019,Left Arm,Ronin,nueva,True,85,Tienda_Kaiju,Lima Centro,-12.04712,-77.04119
+535,Thanos,Thanos,2018,Left Arm,Serpent Society,nueva,False,160,Tienda_Nexus,Barranco,-12.13753,-77.02372
+536,Thanos,Thanos,2015,Left Arm,Fierce Fighters,nueva,True,125,Tienda_Mecha,Miraflores,-12.12397,-77.03151
+537,Thanos,Best of Marvel Legends: Avengers Endgame,2020,Left Leg,Black Panther,abierta,True,110,Tienda_Mecha,Callao,-12.05889,-77.12105
+538,Thanos,Thanos,2019,Left Leg,Ebony Maw,abierta,True,115,Tienda_Mecha,Lima Centro,-12.04523,-77.04155
+539,Thanos,Thanos,2018,Left Leg,Iron Spider,abierta,False,80,Tienda_Nexus,Jesus Maria,-12.06609,-77.04807
+540,Thanos,Thanos,2015,Left Leg,Iron Man Mark 43,nueva,True,135,Tienda_Retro,Magdalena,-12.09127,-77.06936
+541,Thanos,Best of Marvel Legends: Avengers Endgame,2020,Right Arm,Black Widow,abierta,False,105,Tienda_Titan,Los Olivos,-11.97355,-77.07084
+542,Thanos,Best of Marvel Legends: Avengers Endgame,2020,Right Arm,Black Widow,nueva,False,95,Tienda_Retro,La Molina,-12.08441,-76.90985
+543,Thanos,Thanos,2019,Right Arm,Nighthawk,abierta,True,95,Tienda_Legend,Los Olivos,-11.96985,-77.07077
+544,Thanos,Thanos,2018,Right Arm,Songbird,nueva,False,55,Tienda_Mecha,San Juan de Lurigancho,-11.97546,-77.00499
+545,Thanos,Thanos,2015,Right Arm,Hulk,abierta,True,255,Tienda_Hobby,Magdalena,-12.08988,-77.06878
+546,Thanos,Best of Marvel Legends: Avengers Endgame,2020,Right Leg,Captain America,abierta,True,80,Tienda_Retro,Lima Centro,-12.04724,-77.04559
+547,Thanos,Thanos,2019,Right Leg,Citizen V,abierta,False,65,Tienda_Retro,Jesus Maria,-12.06836,-77.05291
+548,Thanos,Thanos,2018,Right Leg,Taskmaster,abierta,True,185,Tienda_Kaiju,Surco,-12.14864,-76.99343
+549,Thanos,Thanos,2015,Right Leg,Captain America,nueva,True,135,Tienda_Titan,San Miguel,-12.079,-77.08491
+550,Thanos,Best of Marvel Legends: Avengers Endgame,2020,Torso,Rescue,abierta,True,50,Tienda_Hobby,Callao,-12.05988,-77.11615
+551,Thanos,Thanos,2019,Torso,Living Laser,nueva,True,90,Tienda_Hobby,Jesus Maria,-12.06796,-77.05355
+552,Thanos,Thanos,2018,Torso,Proxima Midnight,abierta,False,85,Tienda_Nexus,Magdalena,-12.09168,-77.073
+553,The Void,The Void,2024,Arms,Savage Namor,nueva,True,115,Tienda_Kaiju,San Isidro,-12.1015,-77.03669
+554,The Void,The Void,2024,Arms,Savage Namor,nueva,True,115,Tienda_Nexus,Barranco,-12.13641,-77.02043
+555,The Void,The Void,2024,Bottom Tentacles,Justice,nueva,True,85,Tienda_Retro,Surco,-12.14474,-76.99006
+556,The Void,The Void,2024,Head,Vision,abierta,True,85,Tienda_Titan,Surco,-12.14533,-76.99513
+557,The Void,The Void,2024,Legs,Power Princess,nueva,True,160,Tienda_Legend,Miraflores,-12.11765,-77.03331
+558,The Void,The Void,2024,Legs,Power Princess,nueva,True,150,Tienda_Hobby,Barranco,-12.13883,-77.02325
+559,The Void,The Void,2024,Torso,Namorita,abierta,True,125,Tienda_Vault,San Juan de Lurigancho,-11.97799,-77.00433
+560,Thor,Thor,2019,Head,Iron Patriot,abierta,False,90,Tienda_Titan,San Isidro,-12.09409,-77.03466
+561,Thor,Thor,2019,Left Arm,Iron Man Mark Lxxxv,nueva,True,145,Tienda_Legend,Magdalena,-12.09055,-77.07546
+562,Thor,Thor,2019,Left Leg,Heimdall,nueva,False,105,Tienda_Shelf,Barranco,-12.13892,-77.02161
+563,Titus,Titus,2017,Head,Masters Of Mind,nueva,True,245,Tienda_Kaiju,Magdalena,-12.09323,-77.07494
+564,Titus,Titus,2017,Left Arm,Drax,nueva,True,140,Tienda_Titan,San Isidro,-12.09507,-77.03402
+565,Titus,Titus,2017,Left Arm,Drax,nueva,True,175,Tienda_Titan,San Miguel,-12.07987,-77.08529
+566,Titus,Titus,2017,Left leg,Masters Of Mind,nueva,True,85,Tienda_Mecha,Barranco,-12.14384,-77.01815
+567,Titus,Titus,2017,Right leg,Angela,abierta,True,285,Tienda_Kaiju,La Molina,-12.08496,-76.90884
+568,Titus,Titus,2017,Torso,Nova,nueva,True,190,Tienda_Vault,Callao,-12.05815,-77.11936
+569,Totally Awesome Hulk,The Marvels,2023,Head,Commander Rogers,nueva,True,45,Tienda_Nexus,Callao,-12.05729,-77.1217
+570,Totally Awesome Hulk,The Marvels,2023,Left Arm,Marvel Boy,abierta,True,60,Tienda_Vault,Lima Centro,-12.04249,-77.03952
+571,Totally Awesome Hulk,The Marvels,2023,Left Leg,Captain Marvel,nueva,True,45,Tienda_Legend,San Juan de Lurigancho,-11.97546,-77.00769
+572,Totally Awesome Hulk,The Marvels,2023,Left Leg,Captain Marvel,nueva,False,25,Tienda_Nexus,Miraflores,-12.12345,-77.02831
+573,Totally Awesome Hulk,The Marvels,2023,Right Leg,Photon,nueva,True,110,Tienda_Nexus,Jesus Maria,-12.06693,-77.04829
+574,Totally Awesome Hulk,The Marvels,2023,Right arm,Karnak,nueva,True,85,Tienda_Titan,Barranco,-12.14386,-77.02333
+575,Totally Awesome Hulk,The Marvels,2023,Torso,Ms. Marvel,abierta,True,70,Tienda_Shelf,San Isidro,-12.09723,-77.03964
+576,Tri-Sentinel,Tri-Sentinel,2021,Heads,Magneto,nueva,False,85,Tienda_Titan,Lima Centro,-12.04578,-77.04606
+577,Tri-Sentinel,Tri-Sentinel,2021,Left Arm,Xavier,abierta,True,50,Tienda_Hobby,Callao,-12.05372,-77.1197
+578,Tri-Sentinel,Tri-Sentinel,2021,Left Arm,Xavier,nueva,True,50,Tienda_Nexus,San Isidro,-12.09751,-77.03929
+579,Tri-Sentinel,Tri-Sentinel,2021,Left Leg,Moira,nueva,True,190,Tienda_Shelf,San Miguel,-12.07782,-77.09061
+580,Tri-Sentinel,Tri-Sentinel,2021,Right Arm,Cyclops,abierta,True,100,Tienda_Legend,La Molina,-12.08981,-76.90965
+581,Tri-Sentinel,Tri-Sentinel,2021,Right Leg,Marvel Girl,nueva,True,95,Tienda_Mecha,Surco,-12.14745,-76.99391
+582,Tri-Sentinel,Tri-Sentinel,2021,Torso,Omega Sentinel,abierta,True,75,Tienda_Kaiju,Miraflores,-12.11905,-77.0268
+583,Tri-Sentinel,Tri-Sentinel,2021,Torso,Omega Sentinel,nueva,False,45,Tienda_Vault,Lima Centro,-12.04295,-77.04348
+584,Ultron,Ultron,2015,Head,Ant-Man,abierta,True,85,Tienda_Vault,Jesus Maria,-12.06919,-77.04873
+585,Ultron,Ultron,2015,Left Arm,Bulldozer,abierta,True,185,Tienda_Titan,Miraflores,-12.12381,-77.02905
+586,Ultron,Ultron,2015,Left Leg,Grim Reaper,nueva,True,140,Tienda_Titan,Jesus Maria,-12.06855,-77.05147
+587,Ultron,Ultron,2015,Right Leg,Giant Man,abierta,True,105,Tienda_Akiba,San Juan de Lurigancho,-11.9763,-77.01157
+588,Ultron,Ultron,2015,Torso,Mavels Wasp,abierta,True,100,Tienda_Titan,Los Olivos,-11.9736,-77.07334
+589,Ursa Major,Ursa Major,2021,Right Arm,Ultron,nueva,True,240,Tienda_Vault,San Miguel,-12.07492,-77.0835
+590,Ursa Major,Ursa Major,2021,Right Arm,Ultron,nueva,True,260,Tienda_Shelf,Los Olivos,-11.96606,-77.06761
+591,Ursa Major,Ursa Major,2021,Right Leg,Stealth Iron Man,nueva,True,120,Tienda_Akiba,La Molina,-12.08949,-76.91037
+592,Ursa Major,Ursa Major,2021,Torso,Darkstar,nueva,True,95,Tienda_Hobby,Los Olivos,-11.9728,-77.06958
+593,Venom,Monster Venom,2018,Head,Carnage,nueva,True,225,Tienda_Retro,Jesus Maria,-12.06748,-77.05283
+594,Venom,Venom,2016,Head,Evil Adversaries,nueva,True,490,Tienda_Retro,San Juan de Lurigancho,-11.97721,-77.00755
+595,Venom,Monster Venom,2018,Left Arm,Poison,nueva,True,185,Tienda_Nexus,San Isidro,-12.09728,-77.03646
+596,Venom,Venom,2016,Left Arm,Ultimate Spider-Men,nueva,True,335,Tienda_Legend,San Juan de Lurigancho,-11.97333,-77.00901
+597,Venom,Venom,2016,Left Arm,Ultimate Spider-Men,nueva,True,430,Tienda_Kaiju,Lima Centro,-12.04277,-77.04455
+598,Venom,Monster Venom,2018,Left Leg,Venom,abierta,True,180,Tienda_Hobby,San Miguel,-12.07662,-77.08504
+599,Venom,Monster Venom,2018,Left Leg,Venom,nueva,True,170,Tienda_Titan,San Miguel,-12.0735,-77.08597
+600,Venom,Monster Venom,2018,Right Arm,Scream,nueva,True,300,Tienda_Mecha,La Molina,-12.08746,-76.90964
+601,Venom,Monster Venom,2018,Right Leg,Typhoid Mary,abierta,True,155,Tienda_Shelf,Jesus Maria,-12.0701,-77.04833
+602,Venom,Monster Venom,2018,Right Leg,Typhoid Mary,nueva,True,155,Tienda_Retro,San Isidro,-12.09609,-77.0382
+603,Venom,Venom,2016,Right leg,Evil Adversaries,nueva,True,645,Tienda_Legend,Jesus Maria,-12.06902,-77.04988
+604,Venom,Monster Venom,2018,Torso,Spider-Ham,nueva,True,135,Tienda_Retro,Los Olivos,-11.96742,-77.0682
+605,Venompool,Venompool,2020,Head,Carnage,nueva,True,75,Tienda_Kaiju,Magdalena,-12.08802,-77.07491
+606,Venompool,Venompool,2020,Left Arm,Miles Morales,abierta,False,125,Tienda_Legend,Miraflores,-12.1204,-77.02926
+607,Venompool,Venompool,2020,Left Arm,Miles Morales,nueva,True,160,Tienda_Legend,Miraflores,-12.12466,-77.03286
+608,Venompool,Venompool,2020,Legs,Phage,nueva,False,215,Tienda_Legend,Magdalena,-12.08647,-77.06957
+609,Venompool,Venompool,2020,Legs,Phage,abierta,True,210,Tienda_Hobby,Los Olivos,-11.97324,-77.06716
+610,Venompool,Venompool,2020,Right Arm,Morbius The Living Vampire,nueva,True,135,Tienda_Retro,Magdalena,-12.08927,-77.06889
+611,Venompool,Venompool,2020,Torso,Ghost Spider,nueva,True,115,Tienda_Shelf,San Juan de Lurigancho,-11.97593,-77.00908
+612,Vulture,Vulture,2017,Base,Vulture,nueva,True,320,Tienda_Hobby,San Isidro,-12.09828,-77.03463
+613,Vulture,Vulture,2017,Left Wing 1,Moon Knight,nueva,True,135,Tienda_Titan,Surco,-12.14263,-76.98912
+614,Vulture,Vulture,2017,Left Wing 1,Moon Knight,abierta,True,120,Tienda_Vault,Miraflores,-12.1248,-77.03198
+615,Vulture,Vulture,2017,Left Wing 2,Spider-Man,abierta,True,205,Tienda_Nexus,San Miguel,-12.07306,-77.09066
+616,Vulture,Vulture,2017,Right Wing 1,Spider-Man,nueva,True,265,Tienda_Retro,Callao,-12.05313,-77.11585
+617,Vulture,Vulture,2017,Right Wing 1,Spider-Man,abierta,True,335,Tienda_Retro,San Isidro,-12.09666,-77.03336
+618,Vulture,Vulture,2017,Right Wing 2,Spider-Man,abierta,True,245,Tienda_Titan,Barranco,-12.13899,-77.02133
+619,Vulture,Vulture,2017,Right Wing 2,Spider-Man,nueva,True,220,Tienda_Mecha,San Miguel,-12.07522,-77.08701
+620,Warlock,Warlock,2017,Left Arm,Dazzler,nueva,True,195,Tienda_Vault,Lima Centro,-12.04352,-77.03991
+621,Warlock,Warlock,2017,Right Arm,Shatterstar,abierta,True,255,Tienda_Retro,Jesus Maria,-12.06999,-77.04722
+622,Warlock,Warlock,2017,Right leg,Polaris,nueva,True,160,Tienda_Titan,Magdalena,-12.0932,-77.07478
+623,Warlock,Warlock,2017,Torso,Sunfire,nueva,True,240,Tienda_Kaiju,Los Olivos,-11.97112,-77.07162
+624,Warlock,Warlock,2017,Torso,Sunfire,nueva,True,215,Tienda_Akiba,La Molina,-12.08312,-76.90809
+625,Watcher,Watcher,2021,Arms,Captain Carter,abierta,True,80,Tienda_Nexus,Barranco,-12.13848,-77.0245
+626,Watcher,Watcher,2021,Cape,Sylvie,nueva,True,85,Tienda_Titan,San Isidro,-12.09738,-77.03558
+627,Watcher,Watcher,2021,Left leg,Doctor Strange Supreme,nueva,True,75,Tienda_Titan,Barranco,-12.14238,-77.01999
+628,Watcher,Watcher,2021,Right Leg,Zombie Hunter Spidey,nueva,False,85,Tienda_Akiba,Magdalena,-12.08795,-77.07528
+629,Watcher,Watcher,2021,Torso,Heist Nebula,nueva,True,65,Tienda_Mecha,San Miguel,-12.07717,-77.08873
+630,Wendigo,Wendigo,2019,Head,Wolverine,nueva,True,215,Tienda_Titan,Jesus Maria,-12.07112,-77.0489
+631,Wendigo,Wendigo,2019,Left Arm,Nightcrawler,abierta,True,345,Tienda_Kaiju,Surco,-12.14253,-76.9916
+632,Wendigo,Wendigo,2019,Left Leg,Boom-Boom,nueva,False,135,Tienda_Nexus,Callao,-12.05697,-77.1179
+633,Wendigo,Wendigo,2019,Left Leg,Boom-Boom,nueva,True,200,Tienda_Mecha,San Juan de Lurigancho,-11.97708,-77.00833
+634,Wendigo,Wendigo,2019,Right Arm,Mister Sinister,abierta,False,135,Tienda_Retro,Magdalena,-12.09009,-77.07167
+635,Wendigo,Wendigo,2019,Right Leg,Cannonball,nueva,True,75,Tienda_Hobby,Jesus Maria,-12.06631,-77.05277
+636,Wendigo,Wendigo,2019,Right Leg,Cannonball,nueva,True,60,Tienda_Kaiju,Lima Centro,-12.04892,-77.04012
+637,Xemnu,Xemnu,2021,Head,Red Skull,abierta,True,205,Tienda_Legend,Jesus Maria,-12.07124,-77.05178
+638,Xemnu,Xemnu,2021,Left Leg,The Hood,abierta,False,60,Tienda_Kaiju,Los Olivos,-11.97022,-77.06706
+639,Xemnu,Xemnu,2021,Left Leg,The Hood,abierta,True,110,Tienda_Titan,Los Olivos,-11.96634,-77.07189
+640,Xemnu,Xemnu,2021,Right Leg,Arcade,nueva,True,45,Tienda_Nexus,Lima Centro,-12.04276,-77.04673
+641,Zabu,Zabu,2024,Back Left Leg,Cable,nueva,False,90,Tienda_Nexus,San Isidro,-12.09653,-77.03724
+642,Zabu,Zabu,2024,Back Right Leg,Ikaris,nueva,True,65,Tienda_Hobby,San Isidro,-12.10085,-77.04002
+643,Zabu,Zabu,2024,Body,Wolfsbane,abierta,True,140,Tienda_Akiba,San Juan de Lurigancho,-11.9765,-77.00664
+644,Zabu,Zabu,2024,Front Left Leg,Red Widow,abierta,True,125,Tienda_Shelf,Miraflores,-12.11877,-77.03197
+645,Zabu,Zabu,2024,Front Right Leg,Ka-Zar,nueva,False,170,Tienda_Legend,Magdalena,-12.09149,-77.0713
+646,Zabu,Zabu,2024,Head,Black Winter,nueva,True,85,Tienda_Nexus,San Miguel,-12.07301,-77.08448
+647,Zabu,Zabu,2024,Head,Black Winter,nueva,True,90,Tienda_Nexus,San Miguel,-12.08004,-77.08463

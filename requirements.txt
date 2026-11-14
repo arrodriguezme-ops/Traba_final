@@ -1,0 +1,7 @@
+streamlit
+folium
+pandas
+pydantic
+rapidfuzz
+faster-whisper
+anthropic
