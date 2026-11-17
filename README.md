@@ -4,17 +4,22 @@
 Ayudamos a coleccionistas de Marvel Legends en Lima a completar sus Build-A-Figures pieza por pieza, con precio total y tiempo de entrega, mediante búsqueda por voz o texto con IA.
 
 ## 2. Founder
-> **TODO (Angelo):** nombre, foto, una línea sobre ti. Ser coleccionista tú mismo es tu ventaja: conoces el problema desde adentro. Explica cómo cubres producto, ingeniería, diseño y ventas con agentes de IA.
+Coleccionista de Marvel Legends en Lima, comprador y observador del mercado de reventa desde adentro. Conozco el problema como comprador (buscar una figura o la pieza de BAF que falta, comparar precios en grupos y negociar uno a uno) y, por un vendedor conocido, como oferente (no sabe cuánto cobrar ni a quién le interesa su stock). Producto, ingeniería, diseño y análisis de datos los cubro con agentes de IA (Claude Code); yo defino el problema, valido los datos con compradores y vendedores y reviso cada parte.
+> **TODO (Angelo):** nombre y foto.
 
 ## 3. Problema
 Hoy los coleccionistas de Lima buscan figuras en grupos de Facebook, WhatsApp y tiendas sueltas: no hay catálogo único, los precios no son comparables y no se sabe cuánto cuesta ni cuánto demora el envío hasta que se negocia.
 Cómo lo resuelven hoy: scroll en grupos, mensajes uno a uno, WhatsApp.
 
-> **TODO:** notas de 3 conversaciones con usuarios en [`docs/research/`](docs/research/). Sin ellas el problema es solo una hipótesis.
+**Evidencia de usuarios** (en [`docs/research/`](docs/research/)):
+- Entrevista 1 (coleccionista): compra sobre todo figuras del UCM; paga hoy unos S/ 110 por una figura regular en caja; el precio suelto depende de qué tan conocido es el personaje, su calidad y su escasez; extrañó las waves con buena BAF. [Notas](docs/research/entrevista_01_coleccionista.md).
+- Entrevista 2 (vendedor que importa): 50% de sus ventas son Legends y 30% S.H. Figuarts; no tiene relación con las productoras (importa por su cuenta) y le gustaría ser franquicia de Hasbro. Aceptaría exclusividad a cambio de un descuento que le deje vender a unos S/ 90 (precio pre pandemia) y dice que la demanda ha caído. Ante un alza pequeña y permanente vendería unos 3/4 de su volumen actual. [Notas](docs/research/entrevista_02_vendedor.md).
+- Entrevista 3: pendiente (otro coleccionista, idealmente de otro perfil).
+Con dos entrevistas el problema sigue siendo en parte hipótesis; falta la tercera.
 
 ## 4. Solución e insight
 El coleccionista dice lo que quiere ("Goku Ultra Instinto nuevo, hasta 300 soles, vivo en Miraflores"). El sistema lo convierte en una búsqueda estructurada, rankea avisos de vendedores y calcula el costo y tiempo de entrega con repartidores independientes.
-> **TODO:** tu insight propio (qué ves tú como coleccionista que otros no).
+**Insight:** el coleccionista de Marvel Legends no es muy sensible al precio ni tiene un sustituto cercano entre las marcas premium. Si faltara la línea, el reemplazo sería Marvel Select, no Hot Toys, Mafex ni S.H. Figuarts, y un alza de 1% no cambiaría su compra (entrevista 1). Lo que sí cambia su decisión es encontrar la figura o la pieza de BAF que busca, a un precio que pueda comparar. Ese precio hoy es opaco: en nuestras observaciones el precio de reventa en Lima ronda +24% sobre el retail oficial (mediana en Marketplace), con mucha dispersión entre vendedores y canales. El valor no está en abaratar la figura sino en **encontrarla y emparejar a quien la busca con quien la vende**.
 
 ## 5. Why now
 Whisper corre local y barato en una laptop; los LLM extraen datos estructurados de lenguaje natural con pocas líneas; hace tres años esto requería entrenar modelos propios.
@@ -46,7 +51,13 @@ voz/texto → [Whisper local] → [Claude o reglas → Busqueda] → matching (r
 - Detalle de fuentes, permisos y bloqueos (Facebook, Mercado Libre, Ripley): [`docs/fuentes_de_datos.md`](docs/fuentes_de_datos.md).
 
 ## 7. Modelo de negocio
-> **TODO:** decidir quién paga (¿comisión al vendedor?, ¿suscripción del coleccionista para alertas?) y un precio concreto en soles, máximo tres planes. Calcular costo por usuario (tokens, servidor, APIs).
+**Plataforma de dos lados:** conectamos vendedores con compradores emparejando las preferencias de figuras de un lado (qué busca cada coleccionista, incluidas piezas de BAF) con la oferta del otro.
+- **Vendedor:** comisión por cada venta cerrada dentro de la plataforma.
+- **Comprador:** modelo freemium. Gratis al inicio (búsqueda y alertas básicas); al crecer el número de envíos, membresía mensual por búsquedas ilimitadas y alertas de emparejamiento.
+- **Por qué dos lados:** la comisión paga la intermediación y el cobro al comprador financia las alertas y el matching, que es lo que cuesta (IA y servidor).
+
+> **Supuestos de precio a validar con la entrevista 3 y más vendedores (no medidos):** comisión del vendedor 8% de la venta; membresía del comprador S/ 9.90 al mes tras el período gratis. Falta calcular el costo por usuario (tokens, servidor) y comprobar si el vendedor aceptaría esa comisión (no se la preguntamos al vendedor en la entrevista 2).
+
 **Efecto de doble marginalización (sobreprecio de reventa):** `(Precio_rev − P_retail) / P_retail`, con P_retail = retail de Hasbro en USD × tipo de cambio. El vendedor ve cómo se separa del retail y del mercado (`backend/pricing.py`, pestaña *Soy vendedor*).
 Supuestos de envío del modelo (a validar con repartidores): S/ 6 base + S/ 1.2 por km, ~15 km/h (`backend/delivery.py`).
 

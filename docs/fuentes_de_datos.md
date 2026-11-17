@@ -24,3 +24,9 @@ Criterio: usar primero fuentes abiertas que permiten el acceso (robots.txt y té
 - **FOB declarado por Hasbro Perú: US$3.4–5.6 por unidad** frente a un retail en EE. UU. de US$20–28. Parece precio de transferencia entre empresas del grupo, no costo mayorista real: es un piso, no el costo.
 - **Sobreprecio sobre el retail (mediana, figuras individuales con confianza alta):** Tai Loy +45 %, Oechsle/Plaza Vea +75 %, Falabella +199 % (dominada por un revendedor del marketplace). En Facebook Marketplace la mediana de los avisos reales es S/125.
 - Cadena de precios: FOB (~US$5) → retail EE. UU. (US$24.99–27.99 ≈ S/86–97) → tienda en Perú (S/170–350) → reventa entre coleccionistas (≈ S/125, a veces bajo el precio de tienda).
+
+## Tai Loy histórico (Wayback Machine)
+`data/tailoy_wayback_historico.csv`: 49 capturas mensuales de 2022–2026 de 25 páginas de producto de Marvel Legends (Black Widow, Black Panther, Spider-Man Retro, etc.). Se bajaron con el índice CDX de archive.org, User-Agent genérico y 3 s de espera. Limitaciones: pocas figuras, precios de lista o de oferta según el día (p. ej. wave Black Widow S/139 en 2022–2023 y S/27.8–41.7 en capturas de liquidación; wave Black Panther S/149 → S/104.3 → S/57.9–59.6 en 2024), y no hay página para la mayoría de figuras. Las capturas de 2017–2018 no traen precio legible.
+
+## eBay (captura del 14-nov-2026)
+31 avisos nuevos de modelos en caja, con precio en S/ según eBay y envío a Perú por separado. Sin envío ni aranceles el sobreprecio mediano es +9 %; el envío (S/120–370) lo cambia por completo.
