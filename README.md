@@ -31,7 +31,7 @@ python data/scrape_legendsverse.py  # opcional: vuelve a bajar el catálogo (3 s
 python data/make_listings.py        # regenera los avisos sintéticos de Lima
 streamlit run app/streamlit_app.py
 ```
-- URL pública: **TODO (Streamlit Community Cloud)**
+- URL pública: https://trabafinal-h69ccv3efrkmbcl7ntxvhf.streamlit.app/ (Streamlit Community Cloud; sin `ANTHROPIC_API_KEY` usa el parser por reglas)
 - Capturas y diagrama: **TODO** en `docs/`
 - Modelos: Whisper `small` vía faster-whisper, local, porque los audios del usuario no deben salir de su equipo. Claude (`claude-haiku-5-5`) con tool use para extraer la búsqueda; si no hay `ANTHROPIC_API_KEY` se usa un parser por reglas offline.
 
