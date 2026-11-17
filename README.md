@@ -5,7 +5,7 @@ Ayudamos a coleccionistas de Marvel Legends en Lima a completar sus Build-A-Figu
 
 ## 2. Founder
 Coleccionista de Marvel Legends en Lima, comprador y observador del mercado de reventa desde adentro. Conozco el problema como comprador (buscar una figura o la pieza de BAF que falta, comparar precios en grupos y negociar uno a uno) y, por un vendedor conocido, como oferente (no sabe cuánto cobrar ni a quién le interesa su stock). Producto, ingeniería, diseño y análisis de datos los cubro con agentes de IA (Claude Code); yo defino el problema, valido los datos con compradores y vendedores y reviso cada parte.
-> **TODO (Angelo):** nombre y foto.
+**Angelo Roberto Piero Rodriguez Medina.** Foto: pendiente.
 
 ## 3. Problema
 Hoy los coleccionistas de Lima buscan figuras en grupos de Facebook, WhatsApp y tiendas sueltas: no hay catálogo único, los precios no son comparables y no se sabe cuánto cuesta ni cuánto demora el envío hasta que se negocia.
@@ -32,6 +32,7 @@ python data/make_listings.py        # regenera los avisos sintéticos de Lima
 streamlit run app/streamlit_app.py
 ```
 - URL pública: https://trabafinal-h69ccv3efrkmbcl7ntxvhf.streamlit.app/ (Streamlit Community Cloud; sin `ANTHROPIC_API_KEY` usa el parser por reglas)
+- Video de respaldo (demo grabada): https://drive.google.com/file/d/17iN6sQCFKABSKuJU1axspb46ZPYphpvq/view?usp=sharing
 - Diagrama de arquitectura: [`docs/arquitectura.svg`](docs/arquitectura.svg)
 
 ![Arquitectura](docs/img/diagrama_arquitectura.png)
