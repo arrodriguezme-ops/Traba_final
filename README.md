@@ -14,8 +14,8 @@ Cómo lo resuelven hoy: scroll en grupos, mensajes uno a uno, WhatsApp.
 **Evidencia de usuarios** (en [`docs/research/`](docs/research/)):
 - Entrevista 1 (coleccionista): compra sobre todo figuras del UCM; paga hoy unos S/ 110 por una figura regular en caja; el precio suelto depende de qué tan conocido es el personaje, su calidad y su escasez; extrañó las waves con buena BAF. [Notas](docs/research/entrevista_01_coleccionista.md).
 - Entrevista 2 (vendedor que importa): 50% de sus ventas son Legends y 30% S.H. Figuarts; no tiene relación con las productoras (importa por su cuenta) y le gustaría ser franquicia de Hasbro. Aceptaría exclusividad a cambio de un descuento que le deje vender a unos S/ 90 (precio pre pandemia) y dice que la demanda ha caído. Ante un alza pequeña y permanente vendería unos 3/4 de su volumen actual. [Notas](docs/research/entrevista_02_vendedor.md).
-- Entrevista 3: pendiente (otro coleccionista, idealmente de otro perfil).
-Con dos entrevistas el problema sigue siendo en parte hipótesis; falta la tercera.
+- Entrevista 3 (coleccionista de Legends desde 2016, unas 40 figuras): busca en Arenales y Marketplace; nunca encontró la BAF de Green Goblin; lo más complicado son los precios inflados por retailers oficiales y la mala distribución. Pagaría unos S/ 10 al mes por avisos y comparación, y una comisión que mantenga su gasto bajo S/ 100. [Notas](docs/research/entrevista_03_coleccionista.md).
+Son tres entrevistas (dos compradores y un vendedor): sirven para validar el problema y los supuestos de precio, no para estimar nada con precisión.
 
 ## 4. Solución e insight
 El coleccionista dice lo que quiere ("Goku Ultra Instinto nuevo, hasta 300 soles, vivo en Miraflores"). El sistema lo convierte en una búsqueda estructurada, rankea avisos de vendedores y calcula el costo y tiempo de entrega con repartidores independientes.
@@ -63,7 +63,7 @@ voz/texto → [Whisper local] → [Claude o reglas → Busqueda] → matching (r
 - **Comprador:** modelo freemium. Gratis al inicio (búsqueda y alertas básicas); al crecer el número de envíos, membresía mensual por búsquedas ilimitadas y alertas de emparejamiento.
 - **Por qué dos lados:** la comisión paga la intermediación y el cobro al comprador financia las alertas y el matching, que es lo que cuesta (IA y servidor).
 
-> **Supuestos de precio a validar con la entrevista 3 y más vendedores (no medidos):** comisión del vendedor 8% de la venta; membresía del comprador S/ 9.90 al mes tras el período gratis. Falta calcular el costo por usuario (tokens, servidor) y comprobar si el vendedor aceptaría esa comisión (no se la preguntamos al vendedor en la entrevista 2).
+> **Supuestos de precio (no medidos; la entrevista 3 apoya los S/ 10 al mes, falta validar la comisión con más vendedores):** comisión del vendedor 8% de la venta; membresía del comprador S/ 9.90 al mes tras el período gratis. Falta calcular el costo por usuario (tokens, servidor) y comprobar si el vendedor aceptaría esa comisión (no se la preguntamos al vendedor en la entrevista 2).
 
 **Efecto de doble marginalización (sobreprecio de reventa):** `(Precio_rev − P_retail) / P_retail`, con P_retail = retail de Hasbro en USD × tipo de cambio. El vendedor ve cómo se separa del retail y del mercado (`backend/pricing.py`, pestaña *Soy vendedor*).
 Supuestos de envío del modelo (a validar con repartidores): S/ 6 base + S/ 1.2 por km, ~15 km/h (`backend/delivery.py`).

@@ -18,4 +18,4 @@ Fecha: noviembre 2026. Formato: preguntas cortas por mensaje. Entrevistador: el 
 - **Qué valora:** las waves con buena BAF. Eso apoya que la plataforma parta de la búsqueda por BAF pieza por pieza.
 
 ## Pendiente
-Entrevista 2 (vendedor): [entrevista_02_vendedor.md](entrevista_02_vendedor.md). Entrevista 3 pendiente.
+Entrevista 2 (vendedor): [entrevista_02_vendedor.md](entrevista_02_vendedor.md). Entrevista 3: [entrevista_03_coleccionista.md](entrevista_03_coleccionista.md).
