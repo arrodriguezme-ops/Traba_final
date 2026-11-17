@@ -38,14 +38,22 @@ def reales_con_anio(figs: pd.DataFrame) -> pd.DataFrame:
     por_baf = _con_catalogo(r, load_catalog()).set_index("id")["anio"]
     unicos = figs.groupby("_n").filter(lambda g: len(g) == 1).set_index("_n")["anio"]
     r["anio"] = r["id"].map(por_baf)
+    if "anio_estimado" in r:  # anio anotado a mano cuando la caja o el aviso lo dejan claro
+        r["anio"] = r["anio"].fillna(pd.to_numeric(r["anio_estimado"], errors="coerce"))
     r["anio"] = r["anio"].fillna(r["_n"].map(unicos))
     ret = figs.groupby(["_n", "anio"])["retail_usd"].first()
     r["retail_usd"] = pd.to_numeric(pd.Series(
         [ret.get((n, int(a))) if pd.notna(a) else None for n, a in zip(r["_n"], r["anio"])], index=r.index))
+    if "retail_usd_ref" in r:  # retail anotado a mano cuando el nombre del aviso no coincide con el catalogo
+        r["retail_usd"] = r["retail_usd"].fillna(pd.to_numeric(r["retail_usd_ref"], errors="coerce"))
     r["efecto_dm"] = (r["precio_pen"] - r["retail_usd"] * TIPO_CAMBIO) / (r["retail_usd"] * TIPO_CAMBIO)
     r["canal"] = r["fuente"].map(lambda s: "Facebook Marketplace" if "Facebook" in s else
                                  "eBay (sin envio ni aranceles)" if s == "eBay" else
-                                 "Tai Loy" if "Tai Loy" in s else "Otra tienda online")
+                                 "Tai Loy (historico Wayback)" if "Wayback" in s else
+                                 "Tai Loy" if "Tai Loy" in s else
+                                 "Compra propia (historica)" if s.startswith("Compra propia") else
+                                 "Lista de vendedor (historia)" if s.startswith("Lista de vendedor") else
+                                 "Otra tienda online")
     return r
 
 
@@ -130,7 +138,14 @@ def sobreprecio_por_canal(tiendas: pd.DataFrame, reales: pd.DataFrame) -> pd.Dat
     t = t.sort_values("tienda").drop_duplicates(["titulo", "precio_pen", "vendedor"])
     a = pd.DataFrame({"canal": t["tienda"].replace({"Oechsle": "Plaza Vea / Oechsle", "Plaza Vea": "Plaza Vea / Oechsle"}),
                       "efecto": t["efecto_dm"], "precio": t["precio_pen"]})
-    b = reales[reales["efecto_dm"].notna()]
+    # Fuera del promedio: compras historicas del founder (otro anio y otro tipo de cambio), lotes, packs, customs,
+    # preventas y avisos dudosos. Siguen visibles en la ficha de cada figura.
+    dudoso = reales["marca_calidad"].fillna("").str.contains(
+        "custom|lote|pack|linea_ambigua|no_legends|posible_replica|foto_de_catalogo|precio_muy_alto|pieza_suelta|incompleto|subasta")
+    fuera = reales["tipo_aviso"].fillna("").isin(["lote", "lote_ebay", "preventa", "compra_historica"])
+    b = reales[reales["efecto_dm"].notna() & ~dudoso & ~fuera].copy()
+    # Un vendedor que repite el mismo producto en varias publicaciones cuenta una vez (la mas reciente)
+    b = b.sort_values("fecha_publicacion", na_position="first").drop_duplicates(["vendedor", "_n", "anio"], keep="last")
     b = pd.DataFrame({"canal": b["canal"], "efecto": b["efecto_dm"], "precio": b["precio_pen"]})
     x = pd.concat([a, b], ignore_index=True)
     g = x.groupby("canal").agg(avisos=("efecto", "size"), sobreprecio_mediano=("efecto", "median"),

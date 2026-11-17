@@ -20,6 +20,9 @@ DISTRITOS = {
     "La Victoria": (-12.0650, -77.0150), "San Martin de Porres": (-12.0000, -77.0800),
     "Puente Piedra": (-11.8670, -77.0760), "Chorrillos": (-12.1700, -77.0100),
     "Rimac": (-12.0290, -77.0300), "Pueblo Libre": (-12.0720, -77.0630),
+    "Villa El Salvador": (-12.2130, -76.9370), "Independencia": (-11.9900, -77.0550),
+    "San Borja": (-12.1080, -77.0010), "Ate": (-12.0260, -76.9200),
+    "Surquillo": (-12.1130, -77.0190), "Brena": (-12.0590, -77.0510), "San Juan de Miraflores": (-12.1600, -76.9700), "Lince": (-12.0850, -77.0350),
 }
 
 
