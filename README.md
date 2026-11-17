@@ -77,5 +77,26 @@ Supuestos de envío del modelo (a validar con repartidores): S/ 6 base + S/ 1.2 
 | Mapas con Folium (sesión 6) | [`app/streamlit_app.py`](app/streamlit_app.py) |
 
 ## 9. Qué hizo el agente
-Claude Code generó el esqueleto del repo, el generador de datos sintéticos, el motor de matching, el parser y la app Streamlit, en sesiones con el founder, que definió el problema y el flujo y revisa cada parte.
-> **TODO:** actualizar al final con detalle honesto.
+Trabajé con Claude Code en varias sesiones. Yo definí el problema, hice las tres entrevistas, pasé las capturas de avisos, desplegué la app, grabé el video y revisé los resultados. Claude Code escribió el código y los textos, y yo corregí lo que salió mal.
+
+**Lo que hizo Claude Code**
+- Esqueleto del repo, motor de matching, parser de pedidos (Claude o reglas), búsqueda por voz con Whisper y la app Streamlit con mapa Folium.
+- Scrapers de bajo volumen (Legendsverse, tiendas peruanas) y recolección de series históricas desde Wayback Machine (Tai Loy, Seven Figuarts, Toys Master, MercadoLibre 2010-11).
+- Transcripción a CSV de las capturas de Marketplace y eBay que le pasé (`data/listings_reales.csv`), con vendedores anonimizados.
+- `backend/consolidar.py`: cruza todas las fuentes en `data/observaciones_precios.csv` (1,541 observaciones).
+- `backend/estimacion.py` (precio justo por figura, ridge con covariables) y `backend/passthrough.py` (pass-through con bootstrap).
+- Rediseño de la app (amarillo/blanco/gris), pestaña de serie histórica, capturas desde la URL pública, diagrama de arquitectura y borradores de las notas de entrevista y del README.
+
+**Lo que hice yo**
+- Elegir el problema y el modelo de negocio, y realizar las tres entrevistas (dos compradores y un vendedor).
+- Pasar las capturas de avisos reales y decidir qué se considera "popular" y "deluxe".
+- Desplegar en Streamlit Cloud, grabar el video de respaldo y entregar.
+
+**Errores y límites que conviene saber**
+- **Identificación de figuras:** el matching por nombre se equivocó varias veces (por ejemplo, Spider-Man 2099 de la wave Sandman y Spider-UK). Las corrigió Claude Code después de mis observaciones; todavía quedan 612 observaciones sin emparejar con el catálogo y algo de ruido.
+- **Tipo de cambio:** la tabla anual de tipos de cambio (`TC_ANIO`) la escribió Claude Code de memoria y no está revisada contra una fuente.
+- **Pass-through:** el efecto del tipo de cambio no se pudo identificar con estos datos (varía casi solo entre épocas, 2010-11 contra 2022-26). El resultado sobre el precio de lista es exploratorio y no prueba doble marginalización.
+- **Datos simulados:** donde no hay avisos reales, la app muestra avisos sintéticos, rotulados «simulado».
+- **Supuestos sin medir:** algunos retail de referencia (por ejemplo Doctor Doom, wave Doomsday) y los precios del modelo de negocio (comisión y membresía) son supuestos.
+- **Voz en la nube:** en la prueba en Streamlit Cloud la búsqueda por voz no devolvió texto; en local sí funciona.
+- **Tres entrevistas:** sirven para validar el problema y los supuestos, no para estimar nada con precisión.
